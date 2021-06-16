@@ -57,4 +57,5 @@ html {
     background-color: var(--body-color);
     color: var(--text-color);
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
