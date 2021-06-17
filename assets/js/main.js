@@ -68,14 +68,14 @@ const selectedIcon = localStorage.getItem('selected-icon')
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
-// // We validate if the user previously chose a topic
-if (selectedTheme) {
-    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+// // We validate if the user previously choose a theme
+if (selectedTheme && selectedIcon) {
+    console.log(document.body.classList)
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
-  }
+}
 
-// // Activate / deactivate the theme manually with the button
+// // Activate when the button click
 themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
@@ -83,4 +83,23 @@ themeButton.addEventListener('click', () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const scrolls = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+})
+
+scrolls.reveal(`
+            .home__data,.home__img,
+            .about__data,  .about__img,
+            .services__content, 
+            .menu__content,
+            .app__data, .app__img,
+            .contact__data, .contact__button,
+            .footer__content`,{
+    interval: 200
 })
