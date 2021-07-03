@@ -23,7 +23,6 @@
 
 /* ==== LAYOUT ==== */
 
-
 .header {
     width: 100%;
     position: fixed;
@@ -36,14 +35,15 @@
 /* ==== NAV ==== */
 
 .nav {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:740px) {
     .nav__menu {
         position: fixed;
         top: var(--header-height);
@@ -144,8 +144,8 @@
 /*========== HOME ==========*/
 
 .home__container {
-    padding-top: 5rem;
-    height: calc(100vh - var(--header-height));
+    /* padding-top: 5rem; */
+    height: calc(100vh - var(--header-height))!important;
     align-content: center;
     justify-content: space-between;
 }
@@ -183,9 +183,11 @@
 }
 
 /*========== ABOUT ==========*/
-.about__container{
+
+.about__container {
     flex-direction: row-reverse;
 }
+
 .about__data {
     text-align: center;
 }
@@ -313,6 +315,10 @@
     margin-bottom: var(--mb-3);
 }
 
+.contact__button {
+    text-align: center;
+}
+
 /*========== FOOTER ==========*/
 
 .footer__container {
@@ -372,13 +378,9 @@
     .home__container, .about__container, .app__container {
         align-items: center;
     }
-    .about__data, .about__initial, .app__data, .app__initial, .contact__container, .contact__initial {
+    /* .about__data, .about__initial, .app__data, .app__initial, .contact__container, .contact__initial {
         text-align: initial;
-    }
-    .about__img, .app__img {
-        width: 380px;
-        order: -1;
-    }
+    } */
     .contact__container {
         align-items: center;
     }
@@ -387,7 +389,18 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 739px) {
+    .home__data, .about__data {
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    .home__img,.about__img,.app__img {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 740px) {
     .section {
         padding-top: 8rem;
     }
@@ -427,9 +440,9 @@
 }
 
 @media screen and (min-width: 960px) {
-    .home__img {
+    /* .home__img {
         width: 500px;
-    }
+    } */
     .about__container, .app__container {
         flex-direction: row-reverse;
     }
@@ -440,5 +453,11 @@
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .services__content{
+        margin-bottom: 2rem;
     }
 }
