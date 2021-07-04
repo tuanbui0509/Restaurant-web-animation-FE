@@ -70,7 +70,6 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moo
 
 // // We validate if the user previously choose a theme
 if (selectedTheme && selectedIcon) {
-    console.log(document.body.classList)
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
