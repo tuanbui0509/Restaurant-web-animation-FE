@@ -286,56 +286,182 @@
 }
 
 /*========== FRESH FOOD ==========*/
-.fresh-food{
+
+.fresh-food {
+    /* max-height: 450px; */
     margin-top: 3rem;
 }
+
 .fresh-food__left {
-    position: relative;
-}
-.fresh-food__left-thumb{
     overflow: hidden;
+}
+
+.fresh-food__left-wp {
+    position: relative;
+    background: url(http://127.0.0.1:5500/assets/images/home/food03.jpg) no-repeat center;
+    background-size: cover;
+    height: 460px;
+}
+
+.fresh-food__left-wp:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
 .fresh-food__left-content {
     position: absolute;
-    top: 20%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    width: 300px;
 }
-.fresh-food__left-title{
+
+.fresh-food__left-title {
     font-size: var(--h1-font-size);
     color: #fff;
     margin-bottom: 2rem;
 }
-.fresh-food__right-list{
+
+.fresh-food__right-list {
     display: flex;
     flex-direction: column;
 }
-.fresh-food__right-item{
+
+.fresh-food__right-item {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
+    flex: 1;
+    margin-bottom: 1.2rem;
 }
-.fresh-food__right-img{
+
+.fresh-food__right-item:last-child {
+    margin-bottom: 0;
+}
+
+.fresh-food__right-thumb {
+    overflow: hidden;
+}
+
+.fresh-food__right-img {
     width: 100px;
     margin-right: 1rem;
 }
-.fresh-food__right-price{
+
+.fresh-food__right-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.fresh-food__right-price {
     font-weight: var(--font-semi-bold);
     font-size: var(--h3-font-size);
     color: var(--first-color);
 }
-.fresh-food__right-reviews{
+
+.fresh-food__right-reviews {
     display: flex;
     align-items: center;
 }
-.fresh-food__right-rating-icon{
+
+.fresh-food__right-rating-icon {
     color: var(--gold-color);
 }
-.fresh-food__right-review{
+
+.fresh-food__right-review {
     margin-left: 0.5rem;
 }
+
+/* ========== Offer Weekend ========== */
+
+.offer-weekend__thumb {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden;
+}
+
+.offer-weekend__img {
+    position: relative;
+    background: url(http://127.0.0.1:5500/assets/images/home/pro.jpg) no-repeat center;
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.offer-weekend__img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.offer-weekend__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* ============Testimonial ================= */
+
+.testimonial {
+    background-color: var(--first-color-light);
+    padding: 6rem 0;
+}
+
+.testimonial__item {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+}
+.testimonial__item-text{
+    font-size: 15px;
+}
+.testimonial__item-icon{
+    font-size: 3rem;
+}
+.testimonial__item-head, .testimonial__item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial__item-info {
+    background-color: var(--first-color-light);
+    padding: 1rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+    color: var(--white-color);
+    position: relative;
+}
+
+.testimonial__item-name {
+    font-size: var(--h3-font-size);
+}
+
+.testimonial__item-thumb {
+    border: 3px solid rgb(228, 225, 225);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    border-radius: 5px;
+    top: -15px;
+}
+
+.testimonial__item-avatar {
+    border-radius: 5px;
+}
+
+
+
 /*========== MEDIA QUERIES ==========*/
 
 @media screen and (max-width: 576px) {

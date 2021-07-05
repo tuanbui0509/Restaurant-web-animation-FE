@@ -416,3 +416,10 @@ img {
         text-align: center;
     }
 }
+
+.color-white{
+    color: var(--white-color)!important;
+}
+.bg-color-white{
+    background: var(--white-color)!important;
+}
