@@ -56,11 +56,11 @@
 .elementor {
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 3.5rem 0;
+    padding: 3rem 0;
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: -160%;
+    left: 5%;
+    right: 5%;
+    top: -140%;
 }
 
 .elementor-item {
@@ -412,7 +412,13 @@
     background-color: var(--first-color-light);
     padding: 6rem 0;
 }
-
+.testimonial__list{
+    overflow: hidden;
+}
+.testimonial__list.owl-theme .owl-dots .owl-dot span{
+    width: 50px;
+    height: 2px;
+}
 .testimonial__item {
     background-color: var(--white-color);
     display: flex;
@@ -471,9 +477,11 @@
     margin-top: 4rem;
 }
 .trending-topic__item {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 4rem;
+    min-height: 568px;
 }
 
 .trending-topic__img {}
@@ -518,6 +526,7 @@
 
 .trending-topic__category {
     padding: .3rem 0.5rem; 
+    text-transform: uppercase;
 }
 
 .trending-topic__title {
