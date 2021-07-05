@@ -1,7 +1,7 @@
 /* ========== BREADCRUMB ==========*/
 
 .breadcrumb {
-    background: url(http://127.0.0.1:5500/assets/images/banner.png) no-repeat center;
+    background: url(http://127.0.0.1:5500/assets/images/detail-product/banner.png) no-repeat center;
     background-size: cover;
     display: block;
     padding: 8rem 0 8rem;
@@ -118,7 +118,7 @@
 
 .detail-info__rate-item {
     font-size: 20px;
-    color: var(--rate-color);
+    color: var(--gold-color);
 }
 
 .detail-info__rate-reviews {
@@ -197,7 +197,7 @@
 }
 
 .detail-info__social-item:hover {
-    background-color: var(--rate-color);
+    background-color: var(--gold-color);
     border-color: transparent;
     color: var(--body-color);
     transition: all 0.5s ease-in-out;
@@ -233,7 +233,7 @@
 
 .detail-info__policy-link:hover {
     transition: all 0.3s ease-in-out;
-    color: var(--rate-color);
+    color: var(--gold-color);
 }
 
 .detail-info__policy-link img {
@@ -245,29 +245,6 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.tabs-list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.tabs-item {
-    padding: 0.75rem 1.25rem;
-    color: var(--text-color);
-    margin-right: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.tabs-item:hover, .tabs-item--active {
-    background-color: var(--first-color-light);
-    color: var(--body-color);
-    transition: all 0.5s ease-in-out;
-}
-
-.tabs-link {
-    color: inherit;
-}
 
 
 .tabs-list-info{
@@ -481,7 +458,7 @@ tr:nth-child(even) {
 
 .add-reviews__btn-submit:hover {
     transition: all 0.3s ease-in-out;
-    background-color: var(--rate-color);
+    background-color: var(--gold-color);
 }
 
 /* =========== RELATED PRODUCT ========== */
@@ -491,113 +468,6 @@ tr:nth-child(even) {
     margin: 2rem 0;
 }
 
-.related-products-item {
-    padding: 1rem;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    border-radius: 5px;
-    position: relative;
-    cursor: pointer;
-}
-
-.related-products-item:hover {
-    transform: translateY(-5px);
-    transition: transform 0.4s ease-in-out;
-
-}
-
-.related-products-thumb {
-    overflow: hidden;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.related-products-img {
-    border-radius: 5px;
-}
-
-.related-products-img:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.related-products-category {
-    font-size: 14px;
-}
-
-.related-products-name {
-    font-size: 22px;
-    color: var(--first-color);
-}
-
-.related-products-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0;
-}
-
-.related-products-price-old {
-    text-decoration: line-through;
-    color: var(--title-color-primary);
-    margin-right: 5px;
-}
-
-.related-products-price-new {
-    color: var(--first-color);
-}
-
-.related-products__reviews {
-    display: flex;
-    align-items: center;
-}
-
-.related-products-rating-icon {
-    color: var(--rate-color);
-    font-size: 14px;
-}
-
-/* .related-products__to-cart {
-    padding: 10px 12px;
-    font-size: 15px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: var(--rate-color);
-    font-weight: var(--font-semi-bold);
-    color: var(--body-color);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-} */
-.related-products__to-wishlist{
-    margin-right: 0.2rem;
-}
-.related-products__to-wishlist, .related-products__to-review {
-    padding: 8px 15px;
-    border: 1px solid var(--rate-color);
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--rate-color);
-}
-
-.related-products__to-wishlist:hover, .related-products__to-review:hover {
-    background-color: var(--rate-color);
-    color: var(--body-color);
-    transition: all 0.25s ease-in-out;
-}
-
-.related-products__label-sale {
-    position: absolute;
-    padding: 8px 15px;
-    display: block;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    color: var(--body-color);
-    background-color: var(--first-color-light);
-}
-
 /* =========== MEDIA ============ */
 @media screen and (max-width: 1024px){
     .detail-info{
@@ -605,15 +475,3 @@ tr:nth-child(even) {
     }
 }
 
-@media screen and (max-width: 580px){
-    .tabs-list{
-        overflow-x: scroll;
-    }
-    
-    .tabs-item {
-        padding: 10px;
-        font-size:14px;
-        min-width: 120px;
-        text-align: center;
-    }
-}
