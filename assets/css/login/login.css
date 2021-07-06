@@ -1,0 +1,128 @@
+.register-wrapper, .login-wrapper {
+    padding: 8rem 0;
+}
+
+.register, .login {
+    background: #f1f1f1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    /* max-height: 300px; */
+    padding: 2rem;
+}
+
+.login {
+    max-height: 100vh;
+}
+
+.register {
+    min-height: 100vh;
+}
+
+.register-bg, .login-bg {
+    max-width: 500px;
+}
+
+.form .heading {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    color: var(--first-color);
+}
+
+.form .desc {
+    text-align: center;
+    color: var(--title-color-primary);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.form-label, .form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 400;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+.form-control {
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    padding: 10px;
+    border: 1px transparent;
+    border-bottom: 1px solid var(--first-color-light);
+    background-color: var(--light-green-color);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group.invalid .form-control:focus {
+    border: 1px solid #f33a58;
+}
+
+.form-group.invalid .form-control {
+    border-bottom: 1px solid #f33a58;
+}
+
+.form-control:focus {
+    border: 1px solid var(--first-color-light);
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+    /* color: #f33a58; */
+    font-style: italic;
+}
+
+.form-submit {
+    outline: none;
+    margin-top: 12px;
+    padding: 15px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer {
+    margin-top: 36px;
+}
+
+.forgot-pass-text {
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .register .register-bg {
+        display: none;
+    }
+}
