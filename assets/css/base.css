@@ -42,8 +42,14 @@
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+    /*========== z index ==========*/
+    --padding-box: 2rem;
 }
-
+@media screen and (max-width: 767px) {
+    :root {
+        --padding-box: 0.5rem;
+    }
+}
 @media screen and (min-width: 768px) {
     :root {
         --big-font-size: 2rem;
@@ -73,12 +79,14 @@ html {
 }
 
 body {
-    margin: var(--header-height)+1.5rem 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
     line-height: 1.6;
+    overflow-x: hidden;
+    margin: var(--header-height)+1.5rem 0 0 0;
+    position: relative;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -90,13 +98,12 @@ body.dark-theme {
     --container-color: #27302C;
 }
 
-/*========== Button Dark/Light ==========*/
+/*========== Text ==========*/
 
-.change-theme {
-    position: absolute;
-    right: 1rem;
-    top: 1.8rem;
-    color: var(--text-color);
-    font-size: 1rem;
-    cursor: pointer;
+.text-right {
+    text-align: right!important;
+}
+
+.text-left {
+    text-align: left!important;
 }

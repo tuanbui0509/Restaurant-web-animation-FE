@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/home/home.css">
+    <link rel="stylesheet" href="assets/css/common.css">
     <!-- CAROUSEL SLIDER -->
     <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
@@ -26,28 +26,137 @@
     <!-- https://boxicons.com/ -->
 </head>
 
-<body>
+<body onscroll="scrollHeader()">
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
         <i class='bx bxs-chevron-up scrolltop__icon'></i>
     </a>
+    <nav class="nav-mobile">
 
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='bx bxs-home nav-mobile__icon'></i> Shop</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-heart'></i> Wishlist</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-cart'></i> Cart</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-user-circle'></i> Account</a></li>
+        </ul>
+    </nav>
     <!--========== HEADER ==========-->
-    <header id="header" class="header scroll-header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Tasty</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+    <header id="header" class="header">
+        <nav class="container">
+            <div class="row">
+                <div class="col col-l-12 col-md-12 col-xs-12">
+                    <nav class="nav">
+                        <a href="#" class="logo"> <img src="./assets/images/common/vegetarian.png" alt=""
+                                class="img-responsive"> &nbsp; <span class="color-green">Tasty </span> &nbsp; <span
+                                class="color-gold">Food</span></a>
+                        <div class="nav__menu row" id="nav-menu">
+                            <div class="col col-md-12 col-xs-12">
+                                <ul class="nav__list">
+                                    <li class="nav__item nav__item--active"><a href="#home" class="nav__link ">Home</a>
+                                    </li>
+                                    <li class="nav__item"><a href="#about" class="nav__link">Page <i
+                                                class='nav__item-icon bx bx-chevron-down'></i></a>
+
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#services" class="nav__sub-link">About
+                                                    Us</a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Our Team
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Contact Us
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item"><a href="#services" class="nav__link">Shop <i
+                                                class='nav__item-icon bx bx-chevron-down'></i></a>
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#services" class="nav__sub-link">Category
+                                                    list</a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Product List
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Product
+                                                    Filter <i class='nav__sub-icon bx bx-chevron-right'></i>
+                                                </a>
+                                                <ul class="nav__sub">
+                                                    <li class="nav__sub-item"><a href="#services"
+                                                            class="nav__sub-link">New Product</a></li>
+                                                    <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">On
+                                                            Sale Product
+                                                        </a></li>
+                                                    <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Out
+                                                            Of Stock Product </a></li>
+                                                    <li class="nav__sub-item"><a href="#menu"
+                                                            class="nav__sub-link">Group Product </a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#menu" class="nav__link">Product
+                                            <i class='nav__item-icon bx bx-chevron-down'></i></a>
+                                            <ul class="nav__sub">
+                                                <li class="nav__sub-item"><a href="#services" class="nav__sub-link">New
+                                                        Product</a></li>
+                                                <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">On Sale
+                                                        Product
+                                                    </a></li>
+                                                <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Out Of
+                                                        Stock Product </a></li>
+                                                <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Group
+                                                        Product </a></li>
+                                            </ul>
+                                        
+                                    </li>
+                                    <li class="nav__item"><a href="#blog" class="nav__link">Blog <i
+                                                class='nav__item-icon bx bx-chevron-down'></i></a>
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#services" class="nav__sub-link">New
+                                                    Blog</a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Most Read
+                                                    Blog
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Popular Blog
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item"><a href="#contact" class="nav__link">Account</a></li>
+
+                                    <li class="nav__item nav__item--icon"><a href="#" class="nav__link">
+                                            <i class='nav__icon bx bx-cart-alt'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="nav__item nav__item--icon">
+                                        <a href="#" class="nav__link">
+                                            <i class='nav__icon bx bxs-heart'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav__utils">
+                            <div class="nav__search">
+                                <i class=' nav__icon bx bx-search'></i>
+                            </div>
+                            <div class="nav__theme">
+                                <i class='nav__icon bx bx-moon' id="theme-button"></i>
+                            </div>
+                        </div>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class='bx bx-menu'></i>
+                        </div>
+
+                    </nav>
+
+                </div>
             </div>
         </nav>
     </header>
@@ -74,7 +183,7 @@
                 </div>
             </div>
         </section>
-        <!--========== ELEMENTOR ==========-->
+        <!--========== ELEMENTARY ==========-->
         <section class="elementor-wrapper section">
             <div class="container">
                 <div class="row elementor">
@@ -130,27 +239,41 @@
         <section class="popular-wrapper section">
             <div class="container">
                 <div class="row">
-                    <div class="col col-l-6 col-xs-12">
+                    <div class="col col-l-4 col-xs-12">
                         <div class="popular-item">
                             <div class="popular-thumb">
                                 <img src="./assets/images/home/popular.png" alt="" class="img-responsive popular-img">
                             </div>
                             <div class="popular-content">
-                                <span class="section-subtitle section-subtitle--bigger">organicallyly Produce</span>
+                                <span class="section-subtitle section-subtitle--bigger">Organicallyly Produce</span>
                                 <h5 class="section-title">Vegetables</h5>
                                 <a href="" class="popular-btn btn-primary">Shop now <i
                                         class="bx bx-right-arrow-alt"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-l-6 col-xs-12">
+                    <div class="col col-l-4 col-xs-12">
                         <div class="popular-item">
                             <div class="popular-thumb">
                                 <img src="./assets/images/home/popular1.png" alt="" class="img-responsive popular-img">
                             </div>
                             <div class="popular-content">
-                                <span class="section-subtitle section-subtitle--bigger">organicallyly Produce</span>
-                                <h5 class="section-title">Vegetables</h5>
+                                <span class="section-subtitle section-subtitle--bigger">Flat 30% off</span>
+                                <h5 class="section-title">Fresh Foods</h5>
+                                <a href="" class="popular-btn btn-primary">Shop now <i
+                                        class="bx bx-right-arrow-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-l-4 col-xs-12">
+                        <div class="popular-item">
+                            <div class="popular-thumb">
+                                <img src="./assets/images/home/popular2.png" alt="" class="img-responsive popular-img">
+                            </div>
+                            <div class="popular-content">
+                                <span class="section-subtitle section-subtitle--bigger">Gluten-free</span>
+                                <h5 class="section-title">Super Salads </h5>
                                 <a href="" class="popular-btn btn-primary">Shop now <i
                                         class="bx bx-right-arrow-alt"></i></a>
                             </div>
@@ -162,7 +285,7 @@
         </section>
 
         <!--========== ABOUT ==========-->
-        <section class="about" id="about">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="row about__container">
                     <div class="col col-l-6 col-md-6 col-xs-12">
@@ -176,53 +299,18 @@
                         </div>
                     </div>
                     <div class="col col-l-6 col-md-6 col-xs-12">
-                        <img src="assets/images/home/about.jpg" alt="" class="about__img">
+                        <div class="about__thumb">
+                            <img src="assets/images/home/about.jpg" alt="" class="about__img">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-        <!--========== organicallyly Produced ==========-->
-        <!-- <section class="menu section container" id="menu">
-            <span class="section-subtitle">Special</span>
-            <h2 class="section-title">Menu of the week </h2>
-            <div class="row menu__container">
-                <div class="col col-l-3 col-md-6 col-xs-12">
-                    <div class="menu__content">
-                        <img src="./assets/images/home/plate1.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Barbecue salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$25.00</span>
-                        <a href="" class="button menu__button"><i class='bx bxs-cart-add'></i></a>
-                    </div>
-                </div>
-                <div class="col col-l-3 col-md-6 col-xs-12">
-                    <div class="menu__content">
-                        <img src="./assets/images/home/plate1.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Salad with fish</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$21.00</span>
-                        <a href="" class="button menu__button"><i class='bx bxs-cart-add'></i></a>
-                    </div>
-                </div>
-                <div class="col col-l-3 col-md-6 col-xs-12">
-                    <div class="menu__content">
-                        <img src="./assets/images/home/plate1.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Spinach salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$18.00</span>
-                        <a href="" class="button menu__button"><i class='bx bxs-cart-add'></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section> -->
-
+        <!--========== ORGANICALLY PRODUCT ==========-->
         <section class="organically-product section">
             <div class="container">
-                <span class="section-subtitle section-subtitle--bigger">organicallyly Produced</span>
+                <span class="section-subtitle section-subtitle--bigger">Organicallyly Produced</span>
                 <h2 class="section-title section-title--bigger">New Organic Add-ons</h2>
                 <div class="section-title-divider"></div>
                 <ul class="tabs-list organically-tabs">
@@ -369,8 +457,8 @@
         </section>
         <!--========== SERVICES ==========-->
         <section class="services section container" id="services">
-            <span class="section-subtitle">Offering</span>
-            <h2 class="section-title">Our amazing services</h2>
+            <span class="section-subtitle section-subtitle--bigger">Offering</span>
+            <h2 class="section-title section-title--bigger">Our amazing services</h2>
 
             <div class="row">
                 <div class="col col-l-4 col-md-6 col-xs-12">
@@ -666,13 +754,13 @@
             </div>
         </section>
 
-        <!--===== APP =======-->
+        <!--========== APP ==========-->
         <section class="app section container">
             <div class="row app__container">
                 <div class="col col-l-6 col-xs-12">
                     <div class="app__data">
-                        <span class="section-subtitle app__initial">App</span>
-                        <h2 class="section-title app__initial">App is aviable</h2>
+                        <span class="section-subtitle app__initial section-subtitle--bigger">App</span>
+                        <h2 class="section-title app__initial section-title--bigger">App is aviable</h2>
                         <p class="app__description">Find our application and download it, you can make reservations,
                             food
                             orders, see your deliveries on the way and much more.</p>
@@ -683,13 +771,15 @@
                     </div>
                 </div>
                 <div class="col col-l-6 col-xs-12">
-                    <img src="assets/images/home/movil-app.png" alt="" class="app__img">
+                    <div class="app__thumb">
+                        <img src="assets/images/home/movil-app.png" alt="" class="app__img">
+                    </div>
                 </div>
             </div>
             </div>
         </section>
 
-        <!--========== Fresh Food ==========-->
+        <!--========== FRESH FOOD ==========-->
         <section class="section fresh-food-wrapper">
             <div class="container">
                 <span class="section-subtitle section-subtitle--bigger">No Chemicals,& No Pesticides</span>
@@ -848,32 +938,12 @@
                 </div>
             </div>
         </section>
-        <!--========== CONTACT US ==========-->
-        <!-- <section class="contact section container" id="contact">
-            <div class="row contact__container">
-                <div class="col col-l-6 col-xs-12">
-                    <div class="contact__data">
-                        <span class="section-subtitle contact__initial">Let's talk</span>
-                        <h2 class="section-title contact__initial">Contact us</h2>
-                        <p class="contact__description">If you want to reserve a table in our restaurant, contact us and
-                            we
-                            will
-                            attend you quickly, with our 24/7 chat service.</p>
-                    </div>
-                </div>
-                <div class="col col-l-6 col-xs-12">
-                    <div class="contact__button">
-                        <a href="#" class="button">Contact us now</a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <!--========== OFFER WEEKEND ==========-->
         <section class="section offer-weekend">
             <div class="container">
                 <div class="row">
-                    <div class="col col-l-12">
+                    <div class="col col-l-12 col-md-12 col-xs-12">
                         <div class="offer-weekend__thumb">
                             <div class="offer-weekend__img"></div>
                             <div class="offer-weekend__content">
@@ -1034,7 +1104,7 @@
         </section>
 
         <!--========== TRENDING TOPIC ==========-->
-        <section class="section trending-topic">
+        <section class="section trending-topic" id="blog">
             <div class="container">
                 <span class="section-subtitle section-subtitle--bigger ">Trending Topic</span>
                 <h2 class="section-title section-title--bigger ">Foodsto Blog Posts</h2>
@@ -1094,7 +1164,8 @@
                                     <a href="#" class="trending-topic__poster"><i class='bx bx-user'></i> ADMIN</a>
                                     <a href="" class="btn-second trending-topic__category">bakery</a>
                                 </div>
-                                <a href="post.html" class="trending-topic__title">Avocado Recipes That’s Quick & Easy</a>
+                                <a href="post.html" class="trending-topic__title">Avocado Recipes That’s Quick &
+                                    Easy</a>
                                 <p class="trending-topic__desc">Organic food and superfoods are delicious and
                                     surprisingly made in a jiffy.</p>
                                 <a href="#" class="trending-topic__btn">Read More <i
@@ -1176,12 +1247,22 @@
             <div class="row footer__container">
                 <div class="col col-l-3 col-md-6 col-xs-12">
                     <div class="footer__content">
-                        <a href="#" class="footer__logo">Tasty Food</a>
-                        <span class="footer__description">Restaurant</span>
-                        <div>
-                            <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                            <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                            <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="logo"> <img src="./assets/images/common/vegetarian.png" alt=""
+                                class="img-responsive"> &nbsp; <span class="color-green">Tasty </span> &nbsp; <span
+                                class="color-gold">Food</span></a>
+                        <span class="footer__description">Subscribe to our newsletter and get 10% off your
+                            first purchase</span>
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-facebook-circle"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-twitter"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-google-plus-circle"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-instagram"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1211,10 +1292,9 @@
                     <div class="footer__content">
                         <h3 class="footer__title">Adress</h3>
                         <ul>
-                            <li>Lima - Peru</li>
-                            <li>Jr Union #999</li>
-                            <li>999 - 888 - 777</li>
-                            <li>tastyfood@email.com</li>
+                            <li><i class='bx bxs-home-heart'></i> 123 Cong Hoa P.4, Tan Binh, HCM</li>
+                            <li><i class='bx bxs-phone'></i>(+84) 936 557 991</li>
+                            <li><i class='bx bx-mail-send'></i> tastyfood@email.com</li>
                         </ul>
                     </div>
                 </div>
@@ -1236,7 +1316,8 @@
             responsive: {
                 0: {
                     items: 1,
-                    nav: false
+                    nav: false,
+                    dots: false
                 },
                 740: {
                     items: 2,
@@ -1268,9 +1349,8 @@
                 }
             }
         })
-
-
     </script>
+
 </body>
 
 </html>

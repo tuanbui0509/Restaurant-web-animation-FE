@@ -2,12 +2,14 @@
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
+    const header = document.getElementById('header')
 
     // Validate that variables exist
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
             // We add the show-menu class to the div tag with the nav__menu class
             nav.classList.toggle('show-menu')
+            header.classList.add('scroll-header')
         })
     }
 }
@@ -16,10 +18,32 @@ showMenu('nav-toggle', 'nav-menu')
 const navLink = document.querySelectorAll('.nav__link')
 navLink.forEach(n => n.addEventListener('click', linkAction))
 function linkAction() {
+    const header = document.getElementById('header')
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
+    header.classList.remove('scroll-header')
+
 }
+
+/*==================== SHOW SUB MENU ====================*/
+
+let showMenuMobile = () => {
+    let list_item = document.querySelectorAll('.nav__list li');
+    list_item.forEach((item) => {
+        item.addEventListener('click', () => {
+            let sub_menu = item.querySelector('.nav__sub')
+            console.log(sub_menu);
+            if (sub_menu && sub_menu.style.display ==='block') {
+                sub_menu.style.display ='none'
+            }else{
+                sub_menu.style.display ='block'
+            }
+        })
+    })
+}
+
+showMenuMobile()
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -44,9 +68,11 @@ window.addEventListener('scroll', scrollActive)
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
     const nav = document.getElementById('header')
-    if (this.scrollY >= 200) nav.classList.add('scroll-header')
+    if (this.scrollY >= 100) nav.classList.add('scroll-header')
     else nav.classList.remove('scroll-header')
 }
+
+// scrollHeader()
 
 window.addEventListener('scroll', scrollActive)
 /*==================== SHOW SCROLL TOP ====================*/
@@ -99,6 +125,6 @@ scrolls.reveal(`
             .menu__content,
             .app__data, .app__img,
             .contact__data, .contact__button,
-            .footer__content`,{
+            .footer__content`, {
     interval: 200
 })
