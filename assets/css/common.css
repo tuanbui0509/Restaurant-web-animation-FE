@@ -411,10 +411,10 @@ img {
     background: url(/assets/images/detail-product/banner.png) no-repeat center;
     background-size: cover;
     display: block;
-    padding: 5rem 0 8rem;
+    padding: 8rem 0 8rem;
     z-index: 9;
     position: relative;
-    margin-bottom: 5rem;
+    
 }
 
 .breadcrumb__container {

@@ -2,7 +2,7 @@
     padding: 8rem 0;
 }
 
-.register, .login {
+.register, .login, .checkout, .checkout-wrapper {
     background: #f1f1f1;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background-color: var(--white-color);
@@ -119,6 +119,64 @@
     font-style: italic;
     font-size: 1rem;
     color: var(--first-color);
+}
+
+/* ============= CHECKOUT ============= */
+
+.checkout-info__total tr {
+    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.checkout-info__total .checkout-info__heading {
+    text-align: left;
+    vertical-align:center;
+}
+
+
+
+.checkout-info__total-title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.checkout-info__table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.checkout-info__title {
+    font-size: var(--h3-font-size);
+    color: var(--title-color-primary);
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+
+.checkout-info__heading--bold {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.checkout-info__count {
+    font-weight: var(--font-semi-bold);
+    font-size: 0.8rem;
+    display: inline-block;
 }
 
 @media screen and (max-width: 1024px) {
