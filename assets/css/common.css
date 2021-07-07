@@ -414,7 +414,6 @@ img {
     padding: 8rem 0 8rem;
     z-index: 9;
     position: relative;
-    
 }
 
 .breadcrumb__container {
@@ -489,6 +488,7 @@ img {
     border: 1px solid transparent;
     border-bottom-color: var(--first-color);
 }
+
 /* ========== LIST PRODUCT ==========*/
 
 .product-item {
@@ -772,6 +772,8 @@ img {
     .nav__item--icon {
         display: none;
     }
+
+    
     .nav__list {
         padding: 0 1rem;
         text-align: left;
@@ -834,4 +836,5 @@ img {
     .nav__utils {
         left: 70%;
     }
+  
 }
