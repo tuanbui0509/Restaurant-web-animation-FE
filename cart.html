@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/login/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/cart/cart.css">
+    <title>Cart</title>
 
     <!-- Link document scroll -->
     <!-- https://scrollrevealjs.org/guide/hello-world.html -->
@@ -158,52 +158,159 @@
     </header>
 
     <!--========== MAIN ==========-->
-    <main class="login-wrapper">
+    <main class="cart-wrapper">
         <!--========== BREADCRUMB ==========-->
         <section class="breadcrumb">
             <div class="container breadcrumb__container">
-                <h2 class="breadcrumb__title">Side Dish</h2>
+                <h2 class="breadcrumb__title">Cart</h2>
                 <ul class="breadcrumb__list">
                     <li class="breadcrumb__item"><a href="./index.html" class="breadcrumb__link">Home</a><i
                             class='bx bx-chevron-right breadcrumb__icon'></i></li>
-                    <li class="breadcrumb__item">Login</li>
+                    <li class="breadcrumb__item">Cart</li>
                 </ul>
             </div>
         </section>
         <!-- ========= FORM ============= -->
         <div class="container">
-            <div class="row login">
-                <div class="col col-l-6 col-md-6 col-xs-12">
-                    <div class="login-bg">
-                        <img src="./assets/images/login/login-page.png" class="img-responsive" alt="">
+            <div class="cart">
+                <div class="row">
+                    <div class="col col-l-12 col-md-12 col-xs-12">
+                        <div class="cart__product">
+                            <table class="cart__table">
+                                <thead class="cart__head">
+                                    <tr class="cart__title">
+                                        <th class="cart__heading">Product</th>
+                                        <th class="cart__heading">Price</th>
+                                        <th class="cart__heading">Quantity</th>
+                                        <th class="cart__heading">Subtotal</th>
+                                        <th class="cart__heading"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="cart__body">
+                                    <tr>
+                                        <td>
+                                            <div class="cart__content">
+                                                <div class="cart__content-thumb">
+                                                    <img src="./assets/images/product/product1.jpg" alt=""
+                                                        class="cart__content-img img-responsive">
+                                                </div>
+                                                <a href="detail-product.html" class="cart__content-name">
+                                                    Bread Breakfast
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart__content">
+                                                <p class="cart__content-price"> $1,200.00</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart__content">
+                                                <div class="section__quantity">
+                                                    <button class="section__quantity-btn section__minus"><i
+                                                            class="bx bx-minus"></i></button>
+                                                    <input type="number" class="section__input-text" step="1" min="1"
+                                                        name="quantity" value="1" title="Qty" placeholder="">
+                                                    <button class="section__quantity-btn section__plus"><i
+                                                            class="bx bx-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="cart__content">
+                                                <p class="cart__content-total"> $1,200.00</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart__content">
+                                                <i class='cart__content-icon bx bxs-trash'></i>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="cart__content">
+                                                <div class="cart__content-thumb">
+                                                    <img src="./assets/images/product/product2.jpg" alt=""
+                                                        class="cart__content-img img-responsive">
+                                                </div>
+                                                <a href="detail-product.html" class="cart__content-name">
+                                                    Fresh Juice
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart__content">
+                                                <p class="cart__content-price"> $1,200.00</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart__content">
+                                                <div class="section__quantity">
+                                                    <button class="section__quantity-btn section__minus"><i
+                                                            class="bx bx-minus"></i></button>
+                                                    <input type="number" class="section__input-text" step="1" min="1"
+                                                        name="quantity" value="1" title="Qty" placeholder="">
+                                                    <button class="section__quantity-btn section__plus"><i
+                                                            class="bx bx-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="cart__content">
+                                                <p class="cart__content-total"> $1,200.00</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart__content">
+                                                <i class='cart__content-icon bx bxs-trash'></i>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="6" class="cart__action">
+                                            <div class="cart__coupon">
+                                                <input type="text" class="cart__coupon-input">
+                                                <button class="btn-second cart__coupon-btn">Apply coupon<i
+                                                        class='bx bx-right-arrow-alt'></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row ">
+                    <div class="col col-l-12 col-md-12 col-xs-12 ">
+                        <div class="cart__total">
+                            <h3 class="cart__total-title">Cart totals</h3>
+                            <table class="cart__table">
+                                <thead>
+                                    <tr>
+                                        <th class="cart__title">Subtotal</th>
+                                        <td class="cart__heading">$1,200.00</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="cart__title">Total</th>
+                                        <td class="cart__heading heading--primary">$1,200.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn-second cart__total-btn">PROCEED TO CHECKOUT<i
+                                    class='bx bx-right-arrow-alt'></i></button>
+                        </div>
                     </div>
                 </div>
-                <div class="col col-l-6 col-md-6 col-xs-12">
-                    <form action="" method="POST" class="form" id="form-login">
-                        <h3 class="heading">Login</h3>
-                        <p class="desc">Welcome to Tasty Food ❤️</p>
-
-                        <div class="spacer"></div>
-
-                        <div class="form-group valid">
-                            <label for="fullname" class="form-label"> Username or email address *</label>
-                            <input id="fullname" name="fullname" type="text" placeholder="tuanbui0509@gmail.com"
-                                class="form-control">
-                            <span class="form-message"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password" class="form-label">Password *</label>
-                            <input id="password" name="password" type="password" placeholder="******** "
-                                class="form-control">
-                            <span class="form-message"></span>
-                        </div>
-                        
-                        <button class="btn-second form-submit">Login <i class='bx bx-right-arrow-alt' ></i></button>
-                    </form>
-                    <a href="./forgot-password.html" class="forgot-pass-text">Lost your password?</a>
-                </div>
-
             </div>
         </div>
 
@@ -273,25 +380,7 @@
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/common.js"></script>
-    <script src="./assets/js/login.js"></script>
-    <!-- My expect -->
-    <script>
-        Validator({
-            form: '#form-login',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-                Validator.isRequired('#fullname', 'This field is required!'),
-                Validator.isRequired('#password', 'This field is required!'),
-                Validator.minLength('#password', 8, `Password at least 8 characters!`),
-            ],
-            onSubmit: function (data){
-            // Call API
-                console.log(data);
-            }
-        })
-
-    </script>
+    <script src="./assets/js/cart.js"></script>
 
 </body>
 

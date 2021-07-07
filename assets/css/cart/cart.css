@@ -1,0 +1,118 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+body .cart-wrapper{
+     font-family: 'Manrope', sans-serif !important;
+} */
+body .cart {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 5rem 0;
+   
+}
+
+.cart__table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-green-color);
+}
+
+td {
+    padding: 15px 15px;
+    vertical-align: middle;
+}
+
+.cart__title {
+    color: var(--title-color-primary);
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+}
+
+.cart__heading {
+    text-align: center;
+}
+
+.cart__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart__content-thumb {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.cart__content-name {
+    margin-left: 1rem;
+    color: var(--title-color-primary);
+}
+
+.cart__content-name:hover {
+    color: var(--first-color);
+}
+
+.cart__content-icon {
+    font-size: 2rem;
+}
+
+.cart__content-icon:hover {
+    cursor: pointer;
+    color: var(--red-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.cart__coupon {
+    display: flex;
+    align-items: center;
+}
+
+.cart__coupon-input {
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    padding: 12px;
+    border: 1px transparent;
+    border-bottom: 1px solid var(--first-color-light);
+    background-color: var(--light-green-color);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.cart__total, .cart__product {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.cart__total tr {
+    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.cart__total .cart__heading {
+    text-align: left;
+}
+
+.cart__total-title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.cart__total-btn {
+    margin-top: 1rem;
+    padding: 1.1rem;
+}

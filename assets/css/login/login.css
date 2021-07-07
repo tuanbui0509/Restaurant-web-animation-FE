@@ -74,11 +74,11 @@
 }
 
 .form-group.invalid .form-control:focus {
-    border: 1px solid #f33a58;
+    border: 1px solid var(--red-color);
 }
 
 .form-group.invalid .form-control {
-    border-bottom: 1px solid #f33a58;
+    border-bottom: 1px solid var(--red-color);
 }
 
 .form-control:focus {
@@ -86,14 +86,14 @@
 }
 
 .form-group.invalid .form-message {
-    color: #f33a58;
+    color: var(--red-color);
 }
 
 .form-message {
     font-size: 1rem;
     line-height: 1.6rem;
     padding: 4px 0 0;
-    /* color: #f33a58; */
+    /* color: var(--red-color); */
     font-style: italic;
 }
 

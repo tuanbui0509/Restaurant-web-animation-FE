@@ -15,6 +15,7 @@
     --title-color-primary: #1c2137;
     --text-color-light: #A6A6A6;
     --body-color: #FBFEFD;
+    --red-color: #f33a58;
     --gold-color: #ffba43;
     --white-color: #fff;
     --container-color: #ffffff;
@@ -106,4 +107,9 @@ body.dark-theme {
 
 .text-left {
     text-align: left!important;
+}
+
+.heading--primary{
+    color: var(--title-color-primary);
+    font-weight: var(--font-semi-bold);
 }
