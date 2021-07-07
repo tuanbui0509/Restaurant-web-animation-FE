@@ -1,0 +1,106 @@
+.product-category {
+    margin: 3rem 0;
+}
+
+.product-category__sidebar-search, .product-category__sidebar-popular, .product-category__sidebar-filter {
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.product-category__sidebar-input {
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--first-color);
+    background-color: var(--light-green-color);
+}
+
+.product-category__sidebar-form {
+    position: relative;
+}
+
+.product-category__sidebar-icon {
+    font-size: var(--h3-font-size);
+    color: var(--title-color-primary);
+}
+
+.product-category__sidebar-btn {
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.product-category__sidebar-filter-item {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.product-category__sidebar-filter-item span {
+    color: var(--first-color);
+}
+
+.product-category__sidebar-filter-item:hover {
+    color: var(--first-color);
+}
+
+.product-category__content-show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-category__content-list{
+    margin-top: 2rem;
+}
+.product-category__content-result{
+    font-size: 15px;
+    color: var(--title-color-primary);
+}
+/* Thiết kẻ thẻ select */
+
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #fff;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+select {
+    flex: 1;
+    padding: 0.5rem;
+    color: var(--title-color-primary);
+    cursor: pointer;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+}
+
+/* thiết kế dấu mũi tên */
+
+.select::after {
+    content: '\02C5';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    border-left: 1px solid #ddd;
+    pointer-events: none;
+}
+
+option{
+    padding: 10px;
+}

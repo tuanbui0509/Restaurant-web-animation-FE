@@ -716,6 +716,46 @@ img {
     margin-right: 0.3rem;
 }
 
+/* ================== sidebar ================ */
+
+.text-sidebar {
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.text-sidebar::after {
+    position: absolute;
+    content:'';
+    width: 10%;
+    height: 3px;
+    background-color: var(--gold-color);
+    left: 0;
+    bottom: -10px;
+}
+.sidebar-popular-item{
+    margin-bottom: 1rem;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+}
+.sidebar-popular-img{
+    width: 100px;
+}
+.sidebar-popular-content{
+    margin-left: 1rem;
+
+}
+.sidebar-popular-name{
+    color: var(--title-color-primary);
+}
+.sidebar-popular-price{
+    color: var(--title-color-primary);
+}
+/* ==================================== QUERY MEDIA =================================== */
+
 @media screen and (min-width:1024px) {
     .nav__toggle {
         display: none;
@@ -772,8 +812,6 @@ img {
     .nav__item--icon {
         display: none;
     }
-
-    
     .nav__list {
         padding: 0 1rem;
         text-align: left;
@@ -836,5 +874,4 @@ img {
     .nav__utils {
         left: 70%;
     }
-  
 }

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/category/category.css">
-    <title>Category List</title>
+    <link rel="stylesheet" href="assets/css/product-category/product-category.css">
+    <title>Category Bakery</title>
 
     <!-- Link document scroll -->
     <!-- https://scrollrevealjs.org/guide/hello-world.html -->
@@ -159,204 +159,172 @@
     <!--========== BREADCRUMB ==========-->
     <section class="breadcrumb">
         <div class="container breadcrumb__container">
-            <h2 class="breadcrumb__title">Category List</h2>
+            <h2 class="breadcrumb__title">Category : Bakery</h2>
             <ul class="breadcrumb__list">
                 <li class="breadcrumb__item"><a href="./index.html" class="breadcrumb__link">Home</a><i
                         class='bx bx-chevron-right breadcrumb__icon'></i></li>
-                <li class="breadcrumb__item">Category List</li>
+                <li class="breadcrumb__item">Product</li>
             </ul>
         </div>
     </section>
     <!--========== MAIN ==========-->
-    <main>
+    <main class="product-category">
         <!--========== LIST CATEGORY ==========-->
-        <section class="section category">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/bakery.png" alt="" class="img-responsive">
+        <div class="container">
+            <div class="row">
+                <div class="col col-l-3 col-md-4 col-xs-12">
+                    <div class="product-category__sidebar">
+                        <div class="product-category__sidebar-search">
+                            <form action="" class="product-category__sidebar-form">
+                                <input type="text" class="product-category__sidebar-input">
+                                <button class="product-category__sidebar-btn">
+                                    <i class=' product-category__sidebar-icon bx bx-search'></i>
+                                </button>
 
+
+                            </form>
+                        </div>
+                        <div class="product-category__sidebar-filter">
+                            <h5 class="text-sidebar">Product visibility</h5>
+                            <ul class="product-category__sidebar-filter-list">
+                                <li class="product-category__sidebar-filter-item">Rated-5 <span>(2)</span> </li>
+                                <li class="product-category__sidebar-filter-item">Rated-4 <span>(1)</span> </li>
+                                <li class="product-category__sidebar-filter-item">Rated-3 <span>(3)</span> </li>
+                            </ul>
+                        </div>
+                        <div class="product-category__sidebar-popular">
+                            <h5 class="text-sidebar">Popular Products</h5>
+                            <ul class="sidebar-popular-list">
+                                <li class="sidebar-popular-item">
+                                    <img src="./assets/images/product/product1.jpg" alt=""
+                                        class="sidebar-popular-img img-responsive">
+
+                                    <div class="sidebar-popular-content">
+                                        <h5 class="sidebar-popular-name">Bread Breakfast</h5>
+                                        <span class="sidebar-popular-price">$12.3</span>
+                                    </div>
+
+                                </li>
+                                <li class="sidebar-popular-item">
+                                    <img src="./assets/images/product/product2.jpg" alt=""
+                                        class="sidebar-popular-img img-responsive">
+
+                                    <div class="sidebar-popular-content">
+                                        <h5 class="sidebar-popular-name">Snack</h5>
+                                        <span class="sidebar-popular-price">$12.3</span>
+
+                                    </div>
+
+                                </li>
+                                <li class="sidebar-popular-item">
+                                    <img src="./assets/images/product/product3.jpg" alt=""
+                                        class="sidebar-popular-img img-responsive">
+
+                                    <div class="sidebar-popular-content">
+                                        <h5 class="sidebar-popular-name">Tomato sour</h5>
+                                        <span class="sidebar-popular-price">$12.3</span>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-l-9 col-md-8 col-xs-12">
+                    <div class="product-category__content">
+                        <div class="product-category__content-show">
+                            <p class="product-category__content-result">Showing all 7 results</p>
+                            <div class="product-category__content-sorting">
+                                <div class="select">
+                                    <select>
+                                        <option selected disabled>Default Sorting</option>
+                                        <option value="1">Sort By Average Rating</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Bakery
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                        <div class="row product-category__content-list">
+                            <div class="col col-l-4 col-md-6 col-xs-12">
+                                <div class="product-item organically__conent-item">
+                                    <a href="#" class="product-thumb">
+                                        <img src="./assets/images/product/product1.jpg" alt=""
+                                            class="product-img img-responsive">
+                                    </a>
+                                    <p class="product-category-name">Bakery, Snacks</p>
+                                    <a href="#" class="product-name">Green Machine</a>
+                                    <div class="product-box">
+                                        <div class="product-prices">
+                                            <strong class="product-price-old">$4.50</strong>
+                                            <strong class="product-price-new">$4.00</strong>
+                                        </div>
+                                        <div class="product__reviews">
+
+                                            <div class="product-rating">
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star-half"></i>
+                                            </div>
+                                            <span class="product__comment">
+                                                (0)
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-box">
+                                        <a href="" class="product__to-cart btn-primary">ADD TO CART<i
+                                                class="bx bx-right-arrow-alt"></i></a>
+                                        <div class="product__right">
+                                            <a href="" class="product__to-wishlist"><i class="bx bx-heart"></i></a>
+                                            <a href="" class="product__to-review"><i class="bx bx-show"></i></a>
+                                        </div>
+                                    </div>
+                                    <span class="product__label-sale">Sale</span>
+                                </div>
+                            </div>
+
+                            <div class="col col-l-4 col-md-6 col-xs-12">
+                                <div class="product-item organically__conent-item">
+                                    <a href="#" class="product-thumb">
+                                        <img src="./assets/images/product/product1.jpg" alt=""
+                                            class="product-img img-responsive">
+                                    </a>
+                                    <p class="product-category-name">Bakery, Snacks</p>
+                                    <a href="#" class="product-name">Green Machine</a>
+                                    <div class="product-box">
+                                        <div class="product-prices">
+                                            <strong class="product-price-old">$4.50</strong>
+                                            <strong class="product-price-new">$4.00</strong>
+                                        </div>
+                                        <div class="product__reviews">
+
+                                            <div class="product-rating">
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star"></i>
+                                                <i class="product-rating-icon bx bxs-star-half"></i>
+                                            </div>
+                                            <span class="product__comment">
+                                                (0)
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-box">
+                                        <a href="" class="product__to-cart btn-primary">ADD TO CART<i
+                                                class="bx bx-right-arrow-alt"></i></a>
+                                        <div class="product__right">
+                                            <a href="" class="product__to-wishlist"><i class="bx bx-heart"></i></a>
+                                            <a href="" class="product__to-review"><i class="bx bx-show"></i></a>
+                                        </div>
+                                    </div>
+                                    <span class="product__label-sale">Sale</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/brekfast.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Breakfast Cereals
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/corn.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Corn
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/juice.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Fruit Yogurt
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/fruit-slid.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Fruits
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/magggy.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Maggy
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/pizza.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Pizza
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/salad.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Salads
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/snaks.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Snacks
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/shup.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Soup
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/salad-1.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Spices
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-l-4 col-md-6 col-xs-12">
-                        <div class="category-tem">
-                            <div class="category-item__thumb">
-                                <img src="./assets/images/category/veg.png" alt="" class="img-responsive">
-
-                            </div>
-                            <div class="category-item__content">
-                                <h3 class="category-item__title">
-                                    Vegetables
-                                </h3>
-                                <a href="product-category.html" class="category-item__btn btn-primary">View All <i
-                                        class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
-        </section>
     </main>
     <!--========== FOOTER ==========-->
     <footer class="footer section">
