@@ -566,6 +566,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
     color: var(--gold-color);
+    display: inline-block;
 }
 
 .product__to-wishlist:hover, .product__to-review:hover {
@@ -850,6 +851,20 @@ img {
     }
     .nav__item {
         margin-bottom: 0;
+    }
+    .nav-mobile__item {
+        min-height: 60px;
+    }
+    .nav-mobile__icon {
+        font-size: 2rem;
+        margin-right: 0.3rem;
+    }
+    .btn-primary{
+        padding: 8px;
+        font-size: 11px;
+    }
+    .product__to-wishlist, .product__to-review {
+        padding: 6px 10px;
     }
 }
 

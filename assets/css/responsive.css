@@ -350,9 +350,17 @@
 
 /* Tablet - PC low resolution */
 
-@media (min-width: 740px) and (max-width: 1023px) {
+/* @media (min-width: 740px) and (max-width: 1112px) {
     .container {
         width: 644px;
+    }
+} */
+
+/* PC low resolution < */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        width: 744px;
     }
 }
 
@@ -363,7 +371,7 @@
         display: none;
     }
     .container {
-        width: 984px;
+        width: 990px;
     }
     .container .row {
         margin-left: -12px;
