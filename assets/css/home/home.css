@@ -286,7 +286,7 @@
 
 .fresh-food__left-wp {
     position: relative;
-    background: url(http://127.0.0.1:5500/assets/images/home/food03.jpg) no-repeat center;
+    background: url(/assets/images/home/food03.jpg) no-repeat center;
     background-size: cover;
     height: 460px;
 }
@@ -375,7 +375,7 @@
 
 .offer-weekend__img {
     position: relative;
-    background: url(http://127.0.0.1:5500/assets/images/home/pro.jpg) no-repeat center;
+    background: url(/assets/images/home/pro.jpg) no-repeat center;
     background-size: cover;
     padding: 10rem 0;
 }
@@ -464,92 +464,6 @@
 
 .trending-topic {
     padding: 6rem 0;
-}
-
-.trending-topic__list {
-    margin-top: 4rem;
-}
-
-.trending-topic__item {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 4rem;
-    min-height: 568px;
-}
-
-.trending-topic__img {}
-
-.trending-topic__content {
-    position: relative;
-    padding: 1rem;
-    display: flex;
-}
-
-.trending-topic__left {
-    transform: rotate(180deg);
-    display: block;
-    font-size: 15px;
-    color: var(--first-color);
-    writing-mode: vertical-rl;
-    top: 25px;
-    position: absolute;
-    left: 20px;
-    padding: 5px;
-    text-transform: uppercase;
-}
-
-.trending-topic__date {}
-
-.trending-topic__right {
-    margin-left: 4rem;
-}
-
-.trending-topic__head {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.trending-topic__poster {
-    color: var(--first-color);
-    margin-right: 1rem;
-}
-
-.trending-topic__category {
-    padding: .3rem 0.5rem;
-    text-transform: uppercase;
-}
-
-.trending-topic__title {
-    font-size: var(--h2-font-size);
-    color: var(--title-color-primary);
-    line-height: 1.3;
-}
-
-.trending-topic__desc {
-    font-size: 14px;
-    margin: 1rem 0;
-}
-
-.trending-topic__btn {
-    color: var(--first-color);
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    outline: none;
-    background: none;
-    border: none;
-    padding: 1rem;
-    border-radius: 5px;
-    max-width: 140px;
-}
-
-.trending-topic__btn:hover {
-    cursor: pointer;
-    background: var(--first-color);
-    color: var(--white-color);
-    transition: all 0.5s ease-in-out;
 }
 
 /*========== MEDIA QUERIES ==========*/
