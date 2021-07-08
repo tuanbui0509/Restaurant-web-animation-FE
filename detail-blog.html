@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./assets/icon/meal.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/blog/blog.css">
+    <title>Blog</title>
+
+    <!-- Link document scroll -->
+    <!-- https://scrollrevealjs.org/guide/hello-world.html -->
+    <!-- Link icon -->
+    <!-- https://boxicons.com/ -->
+</head>
+
+<body onscroll="scrollHeader()">
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevron-up scrolltop__icon'></i>
+    </a>
+    <nav class="nav-mobile">
+
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='bx bxs-home nav-mobile__icon'></i> Shop</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-heart'></i> Blog</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-cart'></i> Cart</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-user-circle'></i> Account</a></li>
+        </ul>
+    </nav>
+    <!--========== HEADER ==========-->
+    <header id="header" class="header">
+        <nav class="container">
+            <div class="row">
+                <div class="col col-l-12 col-md-12 col-xs-12">
+                    <nav class="nav">
+                        <a href="#" class="logo"> <img src="./assets/images/common/vegetarian.png" alt=""
+                                class="img-responsive"> &nbsp; <span class="color-green">Tasty </span> &nbsp; <span
+                                class="color-gold">Food</span></a>
+                        <div class="nav__menu row" id="nav-menu">
+                            <div class="col col-md-12 col-xs-12">
+                                <ul class="nav__list">
+                                    <li class="nav__item nav__item--active"><a href="#home" class="nav__link ">Home</a>
+                                    </li>
+                                    <li class="nav__item"><a href="#about" class="nav__link">Page <i
+                                                class='nav__item-icon bx bx-chevron-down'></i></a>
+
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#services" class="nav__sub-link">About
+                                                    Us</a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Our Team
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Contact Us
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item"><a href="#services" class="nav__link">Shop <i
+                                                class='nav__item-icon bx bx-chevron-down'></i></a>
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#services" class="nav__sub-link">Category
+                                                    list</a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Product List
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Product
+                                                    Filter <i class='nav__sub-icon bx bx-chevron-right'></i>
+                                                </a>
+                                                <ul class="nav__sub">
+                                                    <li class="nav__sub-item"><a href="#services"
+                                                            class="nav__sub-link">New Product</a></li>
+                                                    <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">On
+                                                            Sale Product
+                                                        </a></li>
+                                                    <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Out
+                                                            Of Stock Product </a></li>
+                                                    <li class="nav__sub-item"><a href="#menu"
+                                                            class="nav__sub-link">Group Product </a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#menu" class="nav__link">Product
+                                            <i class='nav__item-icon bx bx-chevron-down'></i></a>
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#services" class="nav__sub-link">New
+                                                    Product</a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">On Sale
+                                                    Product
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Out Of
+                                                    Stock Product </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Group
+                                                    Product </a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="nav__item"><a href="#blog" class="nav__link">Blog <i
+                                                class='nav__item-icon bx bx-chevron-down'></i></a>
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#services" class="nav__sub-link">New
+                                                    Blog</a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Most Read
+                                                    Blog
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#menu" class="nav__sub-link">Popular Blog
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item"><a href="#contact" class="nav__link">Account</a></li>
+
+                                    <li class="nav__item nav__item--icon"><a href="#" class="nav__link">
+                                            <i class='nav__icon bx bx-cart-alt'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="nav__item nav__item--icon">
+                                        <a href="#" class="nav__link">
+                                            <i class='nav__icon bx bxs-heart'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav__utils">
+                            <div class="nav__search">
+                                <i class=' nav__icon bx bx-search'></i>
+                            </div>
+                            <div class="nav__theme">
+                                <i class='nav__icon bx bx-moon' id="theme-button"></i>
+                            </div>
+                        </div>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class='bx bx-menu'></i>
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--========== BREADCRUMB ==========-->
+    <section class="breadcrumb">
+        <div class="container breadcrumb__container">
+            <h2 class="breadcrumb__title">Blog</h2>
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="./index.html" class="breadcrumb__link">Home</a><i
+                        class='bx bx-chevron-right breadcrumb__icon'></i></li>
+                <li class="breadcrumb__item">Blog</li>
+            </ul>
+        </div>
+    </section>
+    <!--========== MAIN ==========-->
+    <main class="blog">
+        <!--========== LIST CATEGORY ==========-->
+        <div class="container">
+            <div class="row">
+                <div class="col col-l-9 col-md-6 col-xs-12">
+                    <div class="row">
+                        <div class="col col-l-12 col-md-12 col-xs-12">
+                            <div class="blog-detail__content">
+                                <div class="blog-detail__conten-thumb">
+                                    <img src="./assets/images/home/main-blog1.png" alt=""
+                                        class="blog-detail__img img-responsive">
+                                </div>
+                                <div class="blog-detail__content-info">
+                                    <div class="blog-detail__content-head">
+                                        <span class="blog-detail__date">JANUARY 7,2021</span>
+                                        <div class="blog-detail__head">
+                                            <a href="#" class="blog-detail__poster"><i class='bx bx-user'></i>
+                                                ADMIN</a>
+                                            <a href="" class="btn-second blog-detail__category">VEGETABLES</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-detail__content-body">
+                                        <p class="blog-detail__content-desc">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit. Ut vitae feugiat magna, ut mattis ligula. Aliquam ut
+                                            rutrum est. Maecenas sit amet scelerisque orci. Aenean et ex ut elit
+                                            tincidunt rutrum vitae eleifend metus. Nunc tincidunt venenatis tellus
+                                            euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metus.
+                                            Nunc mi nisl.
+
+                                        </p>
+                                        <div class="row blog-detail__content-thumb">
+                                            <div class="col col-l-4 col-md-6 col-xs-12">
+                                                <img src="./assets/images/detail-product/product-1.png" alt=""
+                                                    class="blog-detail__content-banner img-responsive">
+                                            </div>
+                                            <div class="col col-l-4 col-md-6 col-xs-12">
+                                                <img src="./assets/images/detail-product/product-2.png" alt=""
+                                                    class="blog-detail__content-banner img-responsive">
+                                            </div>
+                                            <div class="col col-l-4 col-md-6 col-xs-12">
+                                                <img src="./assets/images/detail-product/product-3.png" alt=""
+                                                    class="blog-detail__content-banner img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="blog-detail__content-primary">
+                                            Many desktop publishing packages and web page editors now use Lorem
+                                            Ipsum as their default model text, and a search for ‘lorem ipsum’
+                                            will uncover many web sites still in their infancy. – Someone famous
+                                            in Source Title
+                                            <i class='bx bxs-quote-left'></i>
+                                        </div>
+                                        <p class="blog-detail__content-desc">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit. Ut vitae feugiat magna, ut mattis ligula. Aliquam ut
+                                            rutrum est. Maecenas sit amet scelerisque orci. Aenean et ex ut elit
+                                            tincidunt rutrum vitae eleifend metus. Nunc tincidunt venenatis tellus
+                                            euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metus.
+                                            Nunc mi nislLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                            vitae feugiat magna, ut mattis ligula. Aliquam ut rutrum est. Maecenas
+                                            sit amet scelerisque orci. Aenean et ex ut elit tincidunt rutrum vitae
+                                            eleifend metus. Nunc tincidunt venenatis tellus euismod fermentum.
+                                            Maecenas sed dapibus eros. Phasellus eu mi metus. Nunc mi nisl, viverra
+                                            id sollicitudin et, auctor sit amet augue. Morbi blandit dolor ac
+                                            rhoncus semper. Donec rutrum risus vitae arcu interdum condimentum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-l-12 col-md-12 col-xs-12">
+                            <div class="blog-detail__review">
+                                <h5 class="blog-detail__review-title">Leave a Reply</h5>
+
+                                <!-- <a href="./my-account.html" class="blog-detail__review-account">Your email address will
+                                    not be published. Required fields are marked *</a> -->
+                                <a href="./my-account.html" class="blog-detail__review-account">Logged in as
+                                    tuanbui0509</a>
+                                <a href="./login.html" class="blog-detail__review-logout">Log out?</a>
+                                <form action="">
+                                    <div class="add-reviews-content">
+                                        <label for="content-review" class="add-reviews__heading">Your review *</label>
+                                        <textarea name="" id="content-review" cols="30" rows="10"
+                                            placeholder="Comment"></textarea>
+                                    </div>
+
+                                    <!-- <div class="add-reviews-info">
+                                        <div class="add-reviews-name">
+                                            <label for="name" class="add-reviews__heading">Name *</label>
+                                            <input type="text" name="name" id="name" required="">
+                                        </div>
+                                        <div class="add-reviews-email">
+                                            <label for="email" class="add-reviews__heading">Email *</label>
+                                            <input type="email" name="email" id="email" required="">
+                                        </div>
+                                    </div> -->
+                                    <button class="btn-second">Post Comment <i
+                                            class='bx bx-right-arrow-alt'></i></button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-l-3 col-md-6 col-xs-12">
+                    <div class="sidebar">
+                        <div class="sidebar-info">
+                            <h5 class="text-sidebar">About Author</h5>
+                            <div class="sidebar-info__content">
+                                <img src="./assets/images/home/testimonial1.png" alt=""
+                                    class="sidebar-info__img img-responsive">
+                                <p class="sidebar-info__desc">
+                                    Lorem ipsum dolor sit amet, consectetu iscingel it. In ut ullamcorper leo, eget
+                                    euismod
+                                    orci.sociis natoq.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="sidebar-recent">
+                            <h5 class="text-sidebar">Recent Post</h5>
+                            <ul class="sidebar-recent__list">
+                                <li class="sidebar-recent__item">
+                                    <img src="./assets/images/home/main-blog2.png" alt=""
+                                        class="sidebar-recent__img img-responsive">
+
+                                    <div class="sidebar-recent__content">
+                                        <h5 class="sidebar-recent__name">Recent Post</h5>
+                                        <span class="sidebar-recent__date"><i class='bx bx-calendar'></i>January 7,
+                                            2021</span>
+                                    </div>
+
+                                </li>
+                                <li class="sidebar-recent__item">
+                                    <img src="./assets/images/home/main-blog4.png" alt=""
+                                        class="sidebar-recent__img img-responsive">
+
+                                    <div class="sidebar-recent__content">
+                                        <h5 class="sidebar-recent__name">Avocado Recipes That’s Quick & Easy</h5>
+                                        <span class="sidebar-recent__date"><i class='bx bx-calendar'></i>January 7,
+                                            2021</span>
+
+                                    </div>
+
+                                </li>
+                                <li class="sidebar-recent__item">
+                                    <img src="./assets/images/home/main-blog2.png" alt=""
+                                        class="sidebar-recent__img img-responsive">
+
+                                    <div class="sidebar-recent__content">
+                                        <h5 class="sidebar-recent__name">Tomato sour</h5>
+                                        <span class="sidebar-recent__date"><i class='bx bx-calendar'></i>January 7,
+                                            2021</span>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-banner">
+                            <h5 class="text-sidebar">Recent Post</h5>
+                            <ul class="sidebar-banner__list">
+                                <li class="sidebar-banner__item">
+                                    <img src="./assets/images/home/main-blog2.png" alt=""
+                                        class="sidebar-banner__img img-responsive">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-categories">
+                            <h5 class="text-sidebar">Categories</h5>
+                            <ul class="sidebar-categories__list">
+                                <li class="sidebar-categories__item">
+                                    <a href="./product-category.html" class="sidebar-categories__link">
+                                        Bakery
+                                    </a>
+                                </li>
+                                <li class="sidebar-categories__item">
+                                    <a href="./product-category.html" class="sidebar-categories__link">
+                                        Breakfast
+                                    </a>
+                                </li>
+                                <li class="sidebar-categories__item">
+                                    <a href="./product-category.html" class="sidebar-categories__link">
+                                        FastFood
+                                    </a>
+                                </li>
+                                <li class="sidebar-categories__item">
+                                    <a href="./product-category.html" class="sidebar-categories__link">
+                                        Soup
+                                    </a>
+                                </li>
+                                <li class="sidebar-categories__item">
+                                    <a href="./product-category.html" class="sidebar-categories__link">
+                                        Vegetables
+                                    </a>
+                                </li>
+                                <li class="sidebar-categories__item">
+                                    <a href="./product-category.html" class="sidebar-categories__link">
+                                        Salads
+                                    </a>
+                                </li>
+                                <li class="sidebar-categories__item">
+                                    <a href="./product-category.html" class="sidebar-categories__link">
+                                        Fruits
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="container">
+            <div class="row footer__container">
+                <div class="col col-l-3 col-md-6 col-xs-12">
+                    <div class="footer__content">
+                        <a href="#" class="logo"> <img src="./assets/images/common/vegetarian.png" alt=""
+                                class="img-responsive"> &nbsp; <span class="color-green">Tasty </span> &nbsp; <span
+                                class="color-gold">Food</span></a>
+                        <span class="footer__description">Subscribe to our newsletter and get 10% off your
+                            first purchase</span>
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-facebook-circle"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-twitter"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-google-plus-circle"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-l-3 col-md-6 col-xs-12">
+                    <div class="footer__content">
+                        <h3 class="footer__title">Services</h3>
+                        <ul>
+                            <li><a href="#" class="footer__link">Delivery</a></li>
+                            <li><a href="#" class="footer__link">Pricing</a></li>
+                            <li><a href="#" class="footer__link">Fast food</a></li>
+                            <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-l-3 col-md-6 col-xs-12">
+                    <div class="footer__content">
+                        <h3 class="footer__title">Information</h3>
+                        <ul>
+                            <li><a href="#" class="footer__link">Event</a></li>
+                            <li><a href="#" class="footer__link">Contact us</a></li>
+                            <li><a href="#" class="footer__link">Privacy policy</a></li>
+                            <li><a href="#" class="footer__link">Terms of services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-l-3 col-md-6 col-xs-12">
+                    <div class="footer__content">
+                        <h3 class="footer__title">Adress</h3>
+                        <ul>
+                            <li><i class='bx bxs-home-heart'></i> 123 Cong Hoa P.4, Tan Binh, HCM</li>
+                            <li><i class='bx bxs-phone'></i>(+84) 936 557 991</li>
+                            <li><i class='bx bx-mail-send'></i> tastyfood@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>
