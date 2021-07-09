@@ -27,29 +27,162 @@
     <a href="#" class="scrolltop" id="scroll-top">
         <i class='bx bxs-chevron-up scrolltop__icon'></i>
     </a>
+    <nav class="nav-mobile">
 
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='bx bxs-home nav-mobile__icon'></i> Shop</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-heart'></i> Wishlist</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-cart'></i> Cart</a></li>
+            <li class="nav-mobile__item"><a href="" class="nav-mobile__link"><i
+                        class='nav-mobile__icon bx bxs-user-circle'></i> Account</a></li>
+        </ul>
+    </nav>
     <!--========== HEADER ==========-->
-    <header id="header" class="header scroll-header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Tasty</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+    <header id="header" class="header">
+        <nav class="container">
+            <div class="row">
+                <div class="col col-l-12 col-md-12 col-xs-12">
+                    <nav class="nav">
+                        <a href="#" class="logo"> <img src="./assets/images/common/vegetarian.png" alt=""
+                                class="img-responsive"> &nbsp; <span class="color-green">Tasty </span> &nbsp; <span
+                                class="color-gold">Food</span></a>
+                        <div class="nav__menu row" id="nav-menu">
+                            <div class="col col-md-12 col-xs-12">
+                                <ul class="nav__list">
+                                    <li class="nav__item nav__item--active"><a href="#" class="nav__link ">Home</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">
+                                            Page
+                                            <label title="toggle menu" for="page">
+                                                <i class='nav__item-icon bx bx-chevron-down'></i>
+                                            </label>
+                                        </a>
+                                        <input type="checkbox" id="page">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">About
+                                                    Us</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Our Team
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Contact Us
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Shop
+                                            <label for="shop"><i class='nav__item-icon bx bx-chevron-down'></i></label>
+                                        </a>
+                                        <input type="checkbox" id="shop">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Category
+                                                    list</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Product List
+                                                </a></li>
+                                            <li class="nav__sub-item">
+                                                <a href="#" class="nav__sub-link">Product Filter
+                                                    <label for="filter-shop"><i
+                                                            class='nav__item-icon bx bx-chevron-down'></i></label>
+                                                </a>
+                                                <input type="checkbox" id="filter-shop">
+
+
+                                                <ul class="nav__sub">
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                            Product</a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">On
+                                                            Sale Product
+                                                        </a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">Out
+                                                            Of Stock Product </a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">Group
+                                                            Product </a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+
+                                        <a href="#" class="nav__link">
+                                            Product
+                                            <label title="toggle menu" for="product">
+                                                <i class='nav__item-icon bx bx-chevron-down'></i>
+                                            </label>
+                                        </a>
+                                        <input type="checkbox" id="product">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                    Product</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">On Sale
+                                                    Product
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Out Of
+                                                    Stock Product </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Group
+                                                    Product </a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">
+                                            Blog
+                                            <label title="toggle menu" for="blog">
+                                                <i class='nav__item-icon bx bx-chevron-down'></i>
+                                            </label>
+                                        </a>
+                                        <input type="checkbox" id="blog">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                    Blog</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Most Read
+                                                    Blog
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Popular Blog
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Account</a></li>
+
+                                    <li class="nav__item nav__item--icon"><a href="#" class="nav__link">
+                                            <i class='nav__icon bx bx-cart-alt'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="nav__item nav__item--icon">
+                                        <a href="#" class="nav__link">
+                                            <i class='nav__icon bx bxs-heart'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav__utils">
+                            <div class="nav__search">
+                                <i class=' nav__icon bx bx-search'></i>
+                            </div>
+                            <div class="nav__theme">
+                                <i class='nav__icon bx bx-moon' id="theme-button"></i>
+                            </div>
+                        </div>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class='bx bx-menu'></i>
+                        </div>
+
+                    </nav>
+                </div>
             </div>
         </nav>
     </header>
 
     <!--========== MAIN ==========-->
-    <div class="not-found-wrapper">
+    <main class="not-found-wrapper section">
         <div class="container">
             <div class="row">
                 <div class="col col-l-12 col-md-12 col-xs-12">
@@ -57,25 +190,36 @@
                         <img src="./assets/images/not-found/404.png" alt="404 not found" class="img-responsive">
                         <h3 class="not-found-title">Oops! This Page is Not Found.</h3>
                         <p class="not-found-text">The requested page does not exist.</p>
-                        <a href="index.html"class="btn-not-found btn-primary">Back to Home <i class='bx bx-right-arrow-alt'></i></a>
+                        <a href="index.html" class="btn-not-found btn-primary">Back to Home <i
+                                class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!--========== FOOTER ==========-->
-    <footer class="footer section ">
+    <footer class="footer section">
         <div class="container">
             <div class="row footer__container">
                 <div class="col col-l-3 col-md-6 col-xs-12">
                     <div class="footer__content">
-                        <a href="#" class="footer__logo">Tasty Food</a>
-                        <span class="footer__description">Restaurant</span>
-                        <div>
-                            <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                            <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                            <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="logo"> <img src="./assets/images/common/vegetarian.png" alt=""
+                                class="img-responsive"> &nbsp; <span class="color-green">Tasty </span> &nbsp; <span
+                                class="color-gold">Food</span></a>
+                        <span class="footer__description">Subscribe to our newsletter and get 10% off your
+                            first purchase</span>
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-facebook-circle"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-twitter"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-google-plus-circle"></i></a></li>
+                                <li class="footer__social-item"><a href="" class="footer__social-link"><i
+                                            class="bx bxl-instagram"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -105,10 +249,9 @@
                     <div class="footer__content">
                         <h3 class="footer__title">Adress</h3>
                         <ul>
-                            <li>Lima - Peru</li>
-                            <li>Jr Union #999</li>
-                            <li>999 - 888 - 777</li>
-                            <li>tastyfood@email.com</li>
+                            <li><i class='bx bxs-home-heart'></i> 123 Cong Hoa P.4, Tan Binh, HCM</li>
+                            <li><i class='bx bxs-phone'></i>(+84) 936 557 991</li>
+                            <li><i class='bx bx-mail-send'></i> tastyfood@email.com</li>
                         </ul>
                     </div>
                 </div>
@@ -119,7 +262,7 @@
 
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/common.js"></script>
 </body>
 
 </html>

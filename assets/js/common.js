@@ -16,12 +16,12 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('nav-toggle', 'nav-menu')
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
-navLink.forEach(n => n.addEventListener('click', linkAction))
-function linkAction() {
-    const header = document.getElementById('header')
-    const navMenu = document.getElementById('nav-menu')
-}
+// const navLink = document.querySelectorAll('.nav__link')
+// navLink.forEach(n => n.addEventListener('click', linkAction))
+// function linkAction() {
+//     const header = document.getElementById('header')
+//     const navMenu = document.getElementById('nav-menu')
+// }
 
 /*==================== SHOW SUB MENU ====================*/
 

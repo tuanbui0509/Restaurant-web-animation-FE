@@ -3,11 +3,11 @@
 }
 
 .register, .login, .checkout,.forgot {
-    background: #f1f1f1;
+    background: var(--body-color);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    background-color: var(--white-color);
     border-radius: 5px;
     /* max-height: 300px; */
+    border: 1px solid var(--first-color-light);
     padding: 2rem;
 }
 
@@ -56,7 +56,7 @@
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #dddddd;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
 }
 

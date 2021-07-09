@@ -1,4 +1,4 @@
-.not-found-wrapper{padding: 2rem;}
+.not-found-wrapper{ background-color: var(--body-color);}
 .not-found-page {
     text-align: center;
     margin: 0 auto;
