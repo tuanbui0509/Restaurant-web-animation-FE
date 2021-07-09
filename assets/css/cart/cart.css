@@ -8,67 +8,6 @@ body .cart {
    
 }
 
-.cart__table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: var(--light-green-color);
-}
-
-td {
-    padding: 15px 15px;
-    vertical-align: middle;
-}
-
-.cart__title {
-    color: var(--title-color-primary);
-    font-size: var(--h3-font-size);
-    font-weight: bold;
-}
-
-.cart__heading {
-    text-align: center;
-}
-
-.cart__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cart__content-thumb {
-    width: 80px;
-    border-radius: 5px;
-}
-
-.cart__content-name {
-    margin-left: 1rem;
-    color: var(--title-color-primary);
-}
-
-.cart__content-name:hover {
-    color: var(--first-color);
-}
-
-.cart__content-icon {
-    font-size: 2rem;
-}
-
-.cart__content-icon:hover {
-    cursor: pointer;
-    color: var(--red-color);
-    transition: all 0.3s ease-in-out;
-}
-
 .cart__coupon {
     display: flex;
     align-items: center;
