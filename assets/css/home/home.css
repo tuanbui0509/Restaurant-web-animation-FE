@@ -410,6 +410,23 @@
     height: 2px;
 }
 
+.testimonial__list.owl-theme .owl-next span, .testimonial__list.owl-theme .owl-prev span {
+    font-size: 2rem;
+    padding: 0.1rem 1rem;
+    display: block;
+    margin-right: 1rem;
+    background-color: var(--white-color);
+    border-radius: 5px;
+}
+
+.testimonial__list.owl-theme .owl-next span:hover, .testimonial__list.owl-theme .owl-prev span:hover {
+    background-color: var(--first-color);
+}
+
+.testimonial__list.owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--first-color-light);
+}
+
 .testimonial__item {
     background-color: var(--white-color);
     display: flex;
@@ -532,15 +549,12 @@
     .about__container, .app__container {
         flex-direction: row-reverse;
     }
-    .about__container .section-title, .about__container .section-subtitle,
-    .app__container .section-title, .app__container .section-subtitle
-    {
+    .about__container .section-title, .about__container .section-subtitle, .app__container .section-title, .app__container .section-subtitle {
         text-align: left;
     }
-    .about__thumb,.app__thumb {
+    .about__thumb, .app__thumb {
         text-align: center;
     }
-
 }
 
 /* For tall screens on mobiles y desktop*/

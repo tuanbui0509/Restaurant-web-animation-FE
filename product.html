@@ -29,24 +29,146 @@
     </a>
 
     <!--========== HEADER ==========-->
-    <header id="header" class="header scroll-header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Tasty</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+    <header id="header" class="header">
+        <nav class="container">
+            <div class="row">
+                <div class="col col-l-12 col-md-12 col-xs-12">
+                    <nav class="nav">
+                        <a href="#" class="logo"> <img src="./assets/images/common/vegetarian.png" alt=""
+                                class="img-responsive"> &nbsp; <span class="color-green">Tasty </span> &nbsp; <span
+                                class="color-gold">Food</span></a>
+                        <div class="nav__menu row" id="nav-menu">
+                            <div class="col col-md-12 col-xs-12">
+                                <ul class="nav__list">
+                                    <li class="nav__item nav__item--active"><a href="#" class="nav__link ">Home</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">
+                                            Page
+                                            <label title="toggle menu" for="page">
+                                                <i class='nav__item-icon bx bx-chevron-down'></i>
+                                            </label>
+                                        </a>
+                                        <input type="checkbox" id="page">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">About
+                                                    Us</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Our Team
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Contact Us
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Shop
+                                            <label for="shop"><i class='nav__item-icon bx bx-chevron-down'></i></label>
+                                        </a>
+                                        <input type="checkbox" id="shop">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Category
+                                                    list</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Product List
+                                                </a></li>
+                                            <li class="nav__sub-item">
+                                                <a href="#" class="nav__sub-link">Product Filter
+                                                    <label for="filter-shop"><i
+                                                            class='nav__item-icon bx bx-chevron-down'></i></label>
+                                                </a>
+                                                <input type="checkbox" id="filter-shop">
+
+
+                                                <ul class="nav__sub">
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                            Product</a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">On
+                                                            Sale Product
+                                                        </a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">Out
+                                                            Of Stock Product </a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">Group
+                                                            Product </a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+
+                                        <a href="#" class="nav__link">
+                                            Product
+                                            <label title="toggle menu" for="product">
+                                                <i class='nav__item-icon bx bx-chevron-down'></i>
+                                            </label>
+                                        </a>
+                                        <input type="checkbox" id="product">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                    Product</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">On Sale
+                                                    Product
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Out Of
+                                                    Stock Product </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Group
+                                                    Product </a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">
+                                            Blog
+                                            <label title="toggle menu" for="blog">
+                                                <i class='nav__item-icon bx bx-chevron-down'></i>
+                                            </label>
+                                        </a>
+                                        <input type="checkbox" id="blog">
+                                        <ul class="nav__sub">
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                    Blog</a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Most Read
+                                                    Blog
+                                                </a></li>
+                                            <li class="nav__sub-item"><a href="#" class="nav__sub-link">Popular Blog
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Account</a></li>
+
+                                    <li class="nav__item nav__item--icon"><a href="#" class="nav__link">
+                                            <i class='nav__icon bx bx-cart-alt'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="nav__item nav__item--icon">
+                                        <a href="#" class="nav__link">
+                                            <i class='nav__icon bx bxs-heart'>
+                                                <span class="nav__icon-count">1</span>
+                                            </i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav__utils">
+                            <div class="nav__search">
+                                <i class=' nav__icon bx bx-search'></i>
+                            </div>
+                            <div class="nav__theme">
+                                <i class='nav__icon bx bx-moon' id="theme-button"></i>
+                            </div>
+                        </div>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class='bx bx-menu'></i>
+                        </div>
+
+                    </nav>
+                </div>
             </div>
         </nav>
     </header>
+
 
     <!--========== MAIN ==========-->
 
@@ -70,7 +192,8 @@
                 <div class="row">
                     <div class="col col-l-6 col-xs-12">
                         <div class="detail__image">
-                            <img src="./assets/images/detail-product/thumb1.jpg" alt="" class="detail__image-main img-responsive">
+                            <img src="./assets/images/detail-product/thumb1.jpg" alt=""
+                                class="detail__image-main img-responsive">
                         </div>
                         <div class="detail__other-thumb">
                             <ul class="detail__other-thumb-list">
@@ -79,12 +202,12 @@
                                         class="detail__other-thumb-img img-responsive">
                                 </li>
                                 <li class="detail__other-thumb-item detail__other-thumb-item--overlay"
-                                    onclick="changePicture(event)"><img src="./assets/images/detail-product/thumb2.jpg" alt=""
-                                        class="detail__other-thumb-img img-responsive">
+                                    onclick="changePicture(event)"><img src="./assets/images/detail-product/thumb2.jpg"
+                                        alt="" class="detail__other-thumb-img img-responsive">
                                 </li>
                                 <li class="detail__other-thumb-item detail__other-thumb-item--overlay"
-                                    onclick="changePicture(event)"><img src="./assets/images/detail-product/thumb3.jpg" alt=""
-                                        class="detail__other-thumb-img img-responsive">
+                                    onclick="changePicture(event)"><img src="./assets/images/detail-product/thumb3.jpg"
+                                        alt="" class="detail__other-thumb-img img-responsive">
                                 </li>
                             </ul>
                         </div>
@@ -112,8 +235,8 @@
                                 <div class="section__quantity">
                                     <button class="section__quantity-btn section__minus"><i
                                             class='bx bx-minus'></i></button>
-                                    <input type="number" class="section__input-text" step="1" min="1"
-                                        name="quantity" value="1" title="Qty" placeholder="">
+                                    <input type="number" class="section__input-text" step="1" min="1" name="quantity"
+                                        value="1" title="Qty" placeholder="">
                                     <button class="section__quantity-btn section__plus"><i
                                             class='bx bx-plus'></i></button>
                                 </div>
@@ -182,16 +305,20 @@
                         <div class="tab-description__img">
                             <div class="row">
                                 <div class="col col-l-3 col-md-6 col-xs-6">
-                                    <img src="./assets/images/detail-product/product-1.png" alt="" class="img-responsive">
+                                    <img src="./assets/images/detail-product/product-1.png" alt=""
+                                        class="img-responsive">
                                 </div>
                                 <div class="col col-l-3 col-md-6 col-xs-6">
-                                    <img src="./assets/images/detail-product/product-2.png" alt="" class="img-responsive">
+                                    <img src="./assets/images/detail-product/product-2.png" alt=""
+                                        class="img-responsive">
                                 </div>
                                 <div class="col col-l-3 col-md-6 col-xs-6">
-                                    <img src="./assets/images/detail-product/product-3.png" alt="" class="img-responsive">
+                                    <img src="./assets/images/detail-product/product-3.png" alt=""
+                                        class="img-responsive">
                                 </div>
                                 <div class="col col-l-3 col-md-6 col-xs-6">
-                                    <img src="./assets/images/detail-product/product-4.png" alt="" class="img-responsive">
+                                    <img src="./assets/images/detail-product/product-4.png" alt=""
+                                        class="img-responsive">
                                 </div>
                             </div>
                         </div>
@@ -293,7 +420,7 @@
                                 Add a review
                             </h4>
                             <p>Your email address will not be published. Required fields are marked * </p>
-                            <form action="">
+                            <form action="" method="POST" class="form" id="form-review">
                                 <div class="add-reviews__rating">
                                     <label for="" class="add-reviews__heading">Your rating *</label>
                                     <div class="rate">
@@ -310,19 +437,26 @@
                                     </div>
                                 </div>
                                 <div class="add-reviews-content">
-                                    <label for="content-review" class="add-reviews__heading">Your review *</label>
-                                    <textarea name="" id="content-review" cols="30" rows="10"></textarea>
-
-                            </textarea>
-                                </div>
-                                <div class="add-reviews-info">
-                                    <div class="add-reviews-name">
-                                        <label for="name" class="add-reviews__heading">Name *</label>
-                                        <input type="text" name="name" id="name" required>
+                                    <div class="form-group">
+                                        <label for="content-review" class="form-label">Your review *</label>
+                                        <textarea id="content-review" name="content-review" placeholder=""
+                                            class="form-control" cols="30" rows="10"></textarea>
+                                        <span class="form-message"></span>
+                                        </textarea>
                                     </div>
-                                    <div class="add-reviews-email">
-                                        <label for="email" class="add-reviews__heading">Email *</label>
-                                        <input type="email" name="email" id="email" required>
+                                </div>
+
+
+                                <div class="add-reviews-info">
+                                    <div class="form-group add-reviews-input">
+                                        <label for="name" class="form-label">Name *</label>
+                                        <input id="name" name="name" type="text" placeholder="" class="form-control">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="form-group add-reviews-input">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input id="email" name="email" type="text" placeholder="" class="form-control">
+                                        <span class="form-message"></span>
                                     </div>
                                 </div>
                                 <button class="add-reviews__btn-submit btn-second">Submit</button>
@@ -372,15 +506,93 @@
                                 <a href="" class="product__to-cart btn-primary">ADD TO CART<i
                                         class="bx bx-right-arrow-alt"></i></a>
                                 <div class="product__right">
-                                    <a href="" class="product__to-wishlist"><i
-                                            class='bx bx-heart'></i></a>
-                                    <a href="" class="product__to-review"><i
-                                            class='bx bx-show'></i></a>
+                                    <a href="" class="product__to-wishlist"><i class='bx bx-heart'></i></a>
+                                    <a href="" class="product__to-review"><i class='bx bx-show'></i></a>
                                 </div>
                             </div>
                             <span class="product__label-sale">Sale</span>
                         </div>
-                       
+
+                    </div>
+
+                    <div class="col col-l-3 col-md-6 col-xs-12">
+                        <div class="product-item related-products-item">
+                            <a href="#" class="product-thumb">
+                                <img src="./assets/images/detail-product/related.jpg" alt=""
+                                    class="product-img img-responsive">
+                            </a>
+                            <p class="product-category">Bakery, Snacks</p>
+                            <a href="#" class="product-name">Green Machine</a>
+                            <div class="product-box">
+                                <div class="product-prices">
+                                    <strong class="product-price-old">$4.50</strong>
+                                    <strong class="product-price-new">$4.00</strong>
+                                </div>
+                                <div class="product__reviews">
+
+                                    <div class="product-rating">
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star-half'></i>
+                                    </div>
+                                    <span class="product__comment">
+                                        (0)
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="" class="product__to-cart btn-primary">ADD TO CART<i
+                                        class="bx bx-right-arrow-alt"></i></a>
+                                <div class="product__right">
+                                    <a href="" class="product__to-wishlist"><i class='bx bx-heart'></i></a>
+                                    <a href="" class="product__to-review"><i class='bx bx-show'></i></a>
+                                </div>
+                            </div>
+                            <span class="product__label-sale">Sale</span>
+                        </div>
+
+                    </div>
+
+                    <div class="col col-l-3 col-md-6 col-xs-12">
+                        <div class="product-item related-products-item">
+                            <a href="#" class="product-thumb">
+                                <img src="./assets/images/detail-product/related.jpg" alt=""
+                                    class="product-img img-responsive">
+                            </a>
+                            <p class="product-category">Bakery, Snacks</p>
+                            <a href="#" class="product-name">Green Machine</a>
+                            <div class="product-box">
+                                <div class="product-prices">
+                                    <strong class="product-price-old">$4.50</strong>
+                                    <strong class="product-price-new">$4.00</strong>
+                                </div>
+                                <div class="product__reviews">
+
+                                    <div class="product-rating">
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star'></i>
+                                        <i class='product-rating-icon bx bxs-star-half'></i>
+                                    </div>
+                                    <span class="product__comment">
+                                        (0)
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="" class="product__to-cart btn-primary">ADD TO CART<i
+                                        class="bx bx-right-arrow-alt"></i></a>
+                                <div class="product__right">
+                                    <a href="" class="product__to-wishlist"><i class='bx bx-heart'></i></a>
+                                    <a href="" class="product__to-review"><i class='bx bx-show'></i></a>
+                                </div>
+                            </div>
+                            <span class="product__label-sale">Sale</span>
+                        </div>
+
                     </div>
 
                 </ul>
@@ -445,6 +657,26 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/common.js"></script>
     <script src="./assets/js/detail.js"></script>
+    <script src="./assets/js/validation.js"></script>
+    <!-- My expect -->
+    <script>
+        Validator({
+            form: '#form-review',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#name', 'This field is required!'),
+                Validator.isRequired('#email', 'This field is required!'),
+                Validator.isRequired('#content-review', 'This field is required!'),
+            ],
+            onSubmit: function (data) {
+                // Call API
+                console.log(data);
+            }
+        })
+
+    </script>
+
 </body>
 
 </html>

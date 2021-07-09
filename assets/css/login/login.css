@@ -1,8 +1,8 @@
-.register-wrapper, .login-wrapper {
+.register-wrapper, .login-wrapper ,.forgot-wrapper,.checkout-wrapper{
     padding: 8rem 0;
 }
 
-.register, .login, .checkout, .checkout-wrapper {
+.register, .login, .checkout,.forgot {
     background: #f1f1f1;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background-color: var(--white-color);
@@ -14,7 +14,15 @@
 .login {
     max-height: 100vh;
 }
+.forgot-pass-text{
+    margin-top: 0.5rem;
+    display: block;
+}
 
+.forgot-pass-text:hover{
+    color: var(--gold-color);
+}
+/* ============= REGISTER =========== */
 .register {
     min-height: 100vh;
 }
@@ -38,8 +46,6 @@
     vertical-align:center;
 }
 
-
-
 .checkout-info__total-title {
     font-size: var(--h1-font-size);
     color: var(--first-color);
@@ -59,18 +65,6 @@
     color: var(--title-color-primary);
 }
 
-td, th {
-    text-align: left;
-    padding: 8px;
-    width: 50%;
-}
-
-td {
-    padding: 10px;
-    vertical-align: middle;
-}
-
-
 .checkout-info__heading--bold {
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
@@ -85,5 +79,11 @@ td {
 @media screen and (max-width: 1024px) {
     .register .register-bg {
         display: none;
+    }
+    .checkout-info{
+        margin: 2rem 0;
+    }
+    .checkout-wrapper{
+        padding: 4rem 1rem;
     }
 }

@@ -50,6 +50,24 @@ option {
     display: block;
 }
 
+@media screen and (max-width: 1024px) {
+    .product__to-wishlist, .product__to-review {
+        padding: 4px 8px;
+    }
+    .btn-primary.product__to-cart {
+        padding: 8px;
+        font-size: 11px;
+    }
+    .product-price-old,.product-price-new {
+        font-size: 14px;
+    }
+
+    .product-rating-icon {
+        color: var(--gold-color);
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .select {
         width: 15em;

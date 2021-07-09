@@ -12,6 +12,7 @@ const showMenu = (toggleId, navId) => {
             header.classList.add('scroll-header')
         })
     }
+
 }
 showMenu('nav-toggle', 'nav-menu')
 /*==================== REMOVE MENU MOBILE ====================*/
@@ -20,50 +21,46 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 function linkAction() {
     const header = document.getElementById('header')
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-    header.classList.remove('scroll-header')
-
 }
 
 /*==================== SHOW SUB MENU ====================*/
 
-let showMenuMobile = () => {
-    let list_item = document.querySelectorAll('.nav__list li');
-    list_item.forEach((item) => {
-        item.addEventListener('click', () => {
-            let sub_menu = item.querySelector('.nav__sub')
-            console.log(sub_menu);
-            if (sub_menu && sub_menu.style.display ==='block') {
-                sub_menu.style.display ='none'
-            }else{
-                sub_menu.style.display ='block'
-            }
-        })
-    })
-}
+// let showMenuMobile = () => {
+//     let list_item = document.querySelectorAll('.nav__list li');
+//     list_item.forEach((item) => {
+//         item.addEventListener('click', () => {
+//             let sub_menu = item.querySelector('.nav__sub')
+//             console.log(sub_menu);
+//             if (sub_menu && sub_menu.style.display ==='block') {
+//                 sub_menu.style.display ='none'
+//             }else{
+//                 sub_menu.style.display ='block'
+//             }
+//         })
+//     })
+// }
 
-showMenuMobile()
+// showMenuMobile()
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+// const sections = document.querySelectorAll('section[id]')
 
-function scrollActive() {
-    const scrollY = window.pageYOffset
+// function scrollActive() {
+//     const scrollY = window.pageYOffset
 
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+//     sections.forEach(current => {
+//         const sectionHeight = current.offsetHeight
+//         const sectionTop = current.offsetTop - 50;
+//         sectionId = current.getAttribute('id')
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
+//         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         } else {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
@@ -74,7 +71,7 @@ function scrollHeader() {
 
 // scrollHeader()
 
-window.addEventListener('scroll', scrollActive)
+// window.addEventListener('scroll', scrollActive)
 /*==================== SHOW SCROLL TOP ====================*/
 function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
@@ -111,6 +108,9 @@ themeButton.addEventListener('click', () => {
 })
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
+
+
+
 const scrolls = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -125,6 +125,10 @@ scrolls.reveal(`
             .menu__content,
             .app__data, .app__img,
             .contact__data, .contact__button,
-            .footer__content`, {
+            .footer__content
+            .offer-weekend,
+            .fresh-food__right,
+            .fresh-food__left
+            `, {
     interval: 200
 })

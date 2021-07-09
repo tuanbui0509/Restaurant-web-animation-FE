@@ -31,7 +31,7 @@ body .cart {
 
 .cart__total, .cart__product {
     width: 95%;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 .cart__total tr {
@@ -41,6 +41,20 @@ body .cart {
     border-right: none;
 }
 
+.cart td,.cart th {
+    /* padding: 0; */
+    width: 0%;
+}
+.table__content-thumb{
+    margin-left: 2rem;
+}
+.cart .table__content{
+    justify-content:flex-start;
+}
+
+.cart .table__heading:not(:first-child){
+    text-align: left;
+}
 .cart__total .cart__heading {
     text-align: left;
 }
@@ -51,7 +65,12 @@ body .cart {
     margin-bottom: 1rem;
 }
 
-.cart__total-btn {
-    margin-top: 1rem;
-    padding: 1.1rem;
+.cart__total-btn ,.cart__coupon-btn{
+    display: flex;
+    align-items: center;
+}
+
+tfoot{
+    margin: 1rem 0;
+    display: block;
 }
