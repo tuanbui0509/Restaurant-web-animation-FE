@@ -399,7 +399,7 @@
 }
 .offer-weekend__content-title{
     font-size: var(--h1-font-size);
-    color: var(--body-color);
+    color: var(--title-color-fixed);
 }
 /* ============Testimonial ================= */
 
@@ -563,7 +563,9 @@
         text-align: center;
     }
 }
-
+  .fresh-food-btn{
+        margin: 0 auto;
+    }
 /* For tall screens on mobiles y desktop*/
 
 @media screen and (min-height: 721px) {
@@ -582,9 +584,7 @@
     .elementor-item {
         margin-bottom: 1rem;
     }
-    .fresh-food-btn{
-        margin: 0 auto;
-    }
+  
     .offer-weekend__content {
         top: 30%;
     }

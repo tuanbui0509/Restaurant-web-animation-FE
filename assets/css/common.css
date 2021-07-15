@@ -1,5 +1,7 @@
 /* ==== LAYOUT ==== */
-
+body.body-behavior{
+    overflow-y: hidden;
+}
 .header {
     width: 100%;
     position: fixed;
@@ -7,7 +9,6 @@
     left: 0;
     z-index: var(--z-fixed);
 }
-
 /* ==== NAV ==== */
 
 .nav {
@@ -173,6 +174,17 @@
 .nav__search:hover, .nav__theme:hover {
     color: var(--first-color-light);
 }
+/* Input search */
+/* .nav__search-input{
+    position: absolute;
+    right: 0;
+    top: 120%;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--first-color);
+    font-size: 1rem;
+    color: var(--first-color);
+} */
 
 /* Show menu */
 
@@ -204,6 +216,15 @@ body.dark-theme .scroll-header {
 body.dark-theme #header {
     background-color: var(--body-color);
     border-bottom: 1px solid #f0f0f01f;
+}
+
+header label {
+    display: flex;
+    align-items: center;
+}
+
+header .nav__sub-link label {
+    margin-left: 1.5rem;
 }
 
 /* Scroll top */
@@ -1297,6 +1318,57 @@ td {
     color: var(--first-color);
 }
 
+/* ====================== MODAL POPUP ======================= */
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: var(--body-color);
+    margin: 6rem auto;
+    padding: 2rem ;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    width: 35rem;
+}
+
+/* The Close Button */
+
+.modal-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-close:hover, .modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-icon {
+    width: 110px;
+    margin: 0 auto;
+}
+.modal-btn {
+    margin-right: 1rem;
+}
+
 /* ==================================== QUERY MEDIA =================================== */
 
 @media screen and (min-width:740px) and (max-width: 1239px) {
@@ -1360,7 +1432,7 @@ td {
         padding-top: 8rem;
     }
     .nav {
-        height: calc(var(--header-height) + 1.5rem);
+        height: calc(var(--header-height) + 0.5rem);
     }
     .nav__list {
         display: flex;
@@ -1395,7 +1467,7 @@ td {
         text-align: center;
         transition: 0.4s;
         box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
-        background-color: var(--white-color);
+        background-color: var(--body-color);
         border-radius: 0 0 1rem 1rem;
         z-index: var(--z-fixed);
     }
@@ -1405,7 +1477,7 @@ td {
     .nav__utils {
         position: absolute;
         top: 50%;
-        left: 80%;
+        left: 87%;
         transform: translate(-50%, -50%);
     }
     .nav__icon {
@@ -1418,7 +1490,7 @@ td {
         padding: 0 1rem;
         text-align: left;
         max-height: 400px;
-        min-height: 320px;
+        min-height: 324px;
         overflow-x: hidden;
     }
     .nav__sub {
@@ -1500,7 +1572,7 @@ td {
         font-size: 2rem;
     }
     .home__thumb {
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
         display: block;
     }
@@ -1513,6 +1585,13 @@ td {
     }
     .sidebar-info__img {
         max-width: 150px;
+    }
+    .home__data{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .btn-second{
+        margin: 0 auto;
     }
 }
 

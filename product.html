@@ -72,7 +72,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Shop 
+                                        <a href="#" class="nav__link">Shop
                                             <label for="shop"><i class='nav__item-icon bx bx-chevron-down'></i></label>
                                         </a>
                                         <input type="checkbox" id="shop">
@@ -82,22 +82,23 @@
                                             <li class="nav__sub-item"><a href="#" class="nav__sub-link">Product List
                                                 </a></li>
                                             <li class="nav__sub-item">
-                                                <a href="#" class="nav__sub-link">Product Filter 
-                                                    <label for="filter-shop"><i class='nav__item-icon bx bx-chevron-down'></i></label>
+                                                <a href="#" class="nav__sub-link">Product Filter
+                                                    <label for="filter-shop"><i
+                                                            class='nav__item-icon bx bx-chevron-down'></i></label>
                                                 </a>
                                                 <input type="checkbox" id="filter-shop">
 
 
                                                 <ul class="nav__sub">
-                                                    <li class="nav__sub-item"><a href="#"
-                                                            class="nav__sub-link">New Product</a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                            Product</a></li>
                                                     <li class="nav__sub-item"><a href="#" class="nav__sub-link">On
                                                             Sale Product
                                                         </a></li>
                                                     <li class="nav__sub-item"><a href="#" class="nav__sub-link">Out
                                                             Of Stock Product </a></li>
-                                                    <li class="nav__sub-item"><a href="#"
-                                                            class="nav__sub-link">Group Product </a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">Group
+                                                            Product </a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -242,19 +243,21 @@
                                 <a href="" class="detail-info__rate-reviews">(2 customer reviews)</a>
                             </div>
                             <span class="detail-info__price">7.5$</span>
-                            <form action="" class="detail-info__form">
+                            <div class="detail-info__form">
                                 <div class="section__quantity">
-                                    <button class="section__quantity-btn section__minus"><i
+                                    <button class="section__quantity-btn section__minus" onclick="onMinus()"><i
                                             class='bx bx-minus'></i></button>
                                     <input type="number" class="section__input-text" step="1" min="1" name="quantity"
-                                        value="1" title="Qty" placeholder="">
-                                    <button class="section__quantity-btn section__plus"><i
+                                        value="1" title="Qty" placeholder="" id="quantity">
+                                    <button class="section__quantity-btn section__plus" onclick="onAdd()"><i
                                             class='bx bx-plus'></i></button>
                                 </div>
-                                <button class="detail-info__submit btn-animation btn-primary">
-                                    ADD TO CART <i class='bx bx-right-arrow-alt'></i>
-                                </button>
-                            </form>
+                                <form action="">
+                                    <button class="detail-info__submit btn-animation btn-primary">
+                                        ADD TO CART <i class='bx bx-right-arrow-alt'></i>
+                                    </button>
+                                </form>
+                            </div>
                             <div class="detail-info__social">
                                 <ul class="detail-info__social-list">
                                     <li class="detail-info__social-item"><a href="" class="detail-info__social-link"><i

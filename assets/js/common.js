@@ -132,3 +132,72 @@ scrolls.reveal(`
             `, {
     interval: 200
 })
+
+
+// ================= ADD TO CART ==================
+addToCart = (e) => {
+    // Get the modal
+    var ebModal = document.getElementById('addToCart');
+    // When the user clicks the button, open the modal 
+    ebModal.style.display = "block";
+    document.body.classList.add('body-behavior')
+    let text_name = document.querySelector('.text-modal')
+    // text_name.innerHTML = 
+    // Get the <span> element that closes the modal
+    var ebSpan = document.getElementsByClassName("close-modal")[0];
+    // When the user clicks on <span> (x), close the modal
+    ebSpan.addEventListener('click', () => {
+        ebModal.style.display = "none";
+        document.body.classList.remove('body-behavior')
+
+    })
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == ebModal) {
+            ebModal.style.display = "none";
+            document.body.classList.remove('body-behavior')
+
+        }
+    }
+}
+
+addToWishList = () => {
+    // Get the modal
+    var ebModal = document.getElementById('addToWishList');
+    // When the user clicks the button, open the modal 
+    ebModal.style.display = "block";
+    document.body.classList.add('body-behavior')
+    let text_name = document.querySelector('.text-modal')
+    // text_name.innerHTML = 
+    // Get the <span> element that closes the modal
+    var ebSpan = document.getElementsByClassName("close-modal")[0];
+    // When the user clicks on <span> (x), close the modal
+    ebSpan.addEventListener('click', () => {
+        ebModal.style.display = "none";
+        document.body.classList.remove('body-behavior')
+
+    })
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == ebModal) {
+            ebModal.style.display = "none";
+            document.body.classList.remove('body-behavior')
+
+        }
+    }
+}
+
+
+//======== add and minus value ==========
+onMinus = () => {
+    let value = document.getElementById('quantity')
+    if (value.value > 1)
+        value.value = parseInt(value.value) - 1;
+}
+
+onAdd = () => {
+    let value = document.getElementById('quantity')
+    value.value = parseInt(value.value) + 1;
+}

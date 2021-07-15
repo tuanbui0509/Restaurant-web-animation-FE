@@ -76,7 +76,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Shop 
+                                        <a href="#" class="nav__link">Shop
                                             <label for="shop"><i class='nav__item-icon bx bx-chevron-down'></i></label>
                                         </a>
                                         <input type="checkbox" id="shop">
@@ -86,22 +86,23 @@
                                             <li class="nav__sub-item"><a href="#" class="nav__sub-link">Product List
                                                 </a></li>
                                             <li class="nav__sub-item">
-                                                <a href="#" class="nav__sub-link">Product Filter 
-                                                    <label for="filter-shop"><i class='nav__item-icon bx bx-chevron-down'></i></label>
+                                                <a href="#" class="nav__sub-link">Product Filter
+                                                    <label for="filter-shop"><i
+                                                            class='nav__item-icon bx bx-chevron-down'></i></label>
                                                 </a>
                                                 <input type="checkbox" id="filter-shop">
 
 
                                                 <ul class="nav__sub">
-                                                    <li class="nav__sub-item"><a href="#"
-                                                            class="nav__sub-link">New Product</a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">New
+                                                            Product</a></li>
                                                     <li class="nav__sub-item"><a href="#" class="nav__sub-link">On
                                                             Sale Product
                                                         </a></li>
                                                     <li class="nav__sub-item"><a href="#" class="nav__sub-link">Out
                                                             Of Stock Product </a></li>
-                                                    <li class="nav__sub-item"><a href="#"
-                                                            class="nav__sub-link">Group Product </a></li>
+                                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">Group
+                                                            Product </a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -148,14 +149,14 @@
                                     </li>
                                     <li class="nav__item"><a href="#" class="nav__link">Account</a></li>
 
-                                    <li class="nav__item nav__item--icon"><a href="#" class="nav__link">
+                                    <li class="nav__item nav__item--icon"><a href="./cart.html" class="nav__link">
                                             <i class='nav__icon bx bx-cart-alt'>
                                                 <span class="nav__icon-count">1</span>
                                             </i>
                                         </a>
                                     </li>
                                     <li class="nav__item nav__item--icon">
-                                        <a href="#" class="nav__link">
+                                        <a href="./wishlist.html" class="nav__link">
                                             <i class='nav__icon bx bxs-heart'>
                                                 <span class="nav__icon-count">1</span>
                                             </i>
@@ -166,9 +167,9 @@
                             </div>
                         </div>
                         <div class="nav__utils">
-                            <div class="nav__search">
+                            <!-- <div class="nav__search">
                                 <i class=' nav__icon bx bx-search'></i>
-                            </div>
+                            </div> -->
                             <div class="nav__theme">
                                 <i class='nav__icon bx bx-moon' id="theme-button"></i>
                             </div>
@@ -177,7 +178,8 @@
                         <div class="nav__toggle" id="nav-toggle">
                             <i class='bx bx-menu'></i>
                         </div>
-
+                        <!-- ===== input search ===== -->
+                        <!-- <input type="text" class="nav__search-input" placeholder="Search item ...">  -->
                     </nav>
                 </div>
             </div>
@@ -337,26 +339,26 @@
                 <h2 class="section-title section-title--bigger">New Organic Add-ons</h2>
                 <div class="section-title-divider"></div>
                 <ul class="tabs-list organically-tabs">
-                    <li class="tabs-item tabs-item--active" onclick="changeTab(event,'breakfast-cereals')"><a
-                            class="tabs-link">Breakfast Cereals</a>
+                    <li class="tabs-item tabs-item--active" onclick="changeTab(event,'feature-product')"><a
+                            class="tabs-link">Feature Product</a>
                     </li>
-                    <li class="tabs-item" onclick="changeTab(event,'fruit-yogurt')"><a class="tabs-link">Fruit
-                            Yogurt</a></li>
-                    <li class="tabs-item" onclick="changeTab(event,'salads')"><a class="tabs-link">Salads</a>
+                    <li class="tabs-item " onclick="changeTab(event,'new-product')"><a class="tabs-link">New Product</a>
+                    </li>
+                    <li class="tabs-item" onclick="changeTab(event,'best-sale')"><a class="tabs-link">Best sale</a></li>
                     </li>
                 </ul>
 
                 <div class="organically__conent">
-                    <div class="organically__pills" id="breakfast-cereals">
+                    <div class="organically__pills" id="feature-product">
                         <div class="row">
                             <div class="col col-xs-12 col-md-6 col-l-3">
                                 <div class="product-item organically__conent-item">
                                     <a href="#" class="product-thumb">
-                                        <img src="./assets/images/product/product1.jpg" alt=""
+                                        <img src="./assets/images/product/product3.jpg" alt=""
                                             class="product-img img-responsive">
                                     </a>
                                     <p class="product-category">Bakery, Snacks</p>
-                                    <a href="#" class="product-name">Green Machine</a>
+                                    <a href="#" class="product-name">Sour</a>
                                     <div class="product-box">
                                         <div class="product-prices">
                                             <strong class="product-price-old">$4.50</strong>
@@ -377,10 +379,50 @@
                                         </div>
                                     </div>
                                     <div class="product-box">
-                                        <a href="" class="product__to-cart btn-primary">ADD TO CART<i
+                                        <a class="product__to-cart btn-primary" onclick="addToCart(event)">ADD TO CART<i
                                                 class="bx bx-right-arrow-alt"></i></a>
                                         <div class="product__right">
-                                            <a href="" class="product__to-wishlist"><i class='bx bx-heart'></i></a>
+                                            <a class="product__to-wishlist" onclick="addToWishList(event)"><i
+                                                    class='bx bx-heart'></i></a>
+                                            <a href="" class="product__to-review"><i class='bx bx-show'></i></a>
+                                        </div>
+                                    </div>
+                                    <span class="product__label-sale">Sale</span>
+                                </div>
+                            </div>
+                            <div class="col col-xs-12 col-md-6 col-l-3">
+                                <div class="product-item organically__conent-item">
+                                    <a href="#" class="product-thumb">
+                                        <img src="./assets/images/product/product1.jpg" alt=""
+                                            class="product-img img-responsive">
+                                    </a>
+                                    <p class="product-category">Bakery, Snacks</p>
+                                    <a href="#" class="product-name">Snack</a>
+                                    <div class="product-box">
+                                        <div class="product-prices">
+                                            <strong class="product-price-old">$4.50</strong>
+                                            <strong class="product-price-new">$4.00</strong>
+                                        </div>
+                                        <div class="product__reviews">
+
+                                            <div class="product-rating">
+                                                <i class='product-rating-icon bx bxs-star'></i>
+                                                <i class='product-rating-icon bx bxs-star'></i>
+                                                <i class='product-rating-icon bx bxs-star'></i>
+                                                <i class='product-rating-icon bx bxs-star'></i>
+                                                <i class='product-rating-icon bx bxs-star-half'></i>
+                                            </div>
+                                            <span class="product__comment">
+                                                (0)
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-box">
+                                        <a class="product__to-cart btn-primary" onclick="addToCart(event)">ADD TO CART<i
+                                                class="bx bx-right-arrow-alt"></i></a>
+                                        <div class="product__right">
+                                            <a class="product__to-wishlist" onclick="addToWishList(event)"><i
+                                                    class='bx bx-heart'></i></a>
                                             <a href="" class="product__to-review"><i class='bx bx-show'></i></a>
                                         </div>
                                     </div>
@@ -390,7 +432,7 @@
                         </div>
                     </div>
 
-                    <div class="organically__pills" id="fruit-yogurt">
+                    <div class="organically__pills" id="best-sale">
                         <div class="row">
                             <div class="col col-xs-12 col-md-6 col-l-3">
                                 <div class="product-item organically__conent-item">
@@ -420,10 +462,11 @@
                                         </div>
                                     </div>
                                     <div class="product-box">
-                                        <a href="" class="product__to-cart btn-primary">ADD TO CART<i
+                                        <a class="product__to-cart btn-primary" onclick="addToCart(event)">ADD TO CART<i
                                                 class="bx bx-right-arrow-alt"></i></a>
                                         <div class="product__right">
-                                            <a href="" class="product__to-wishlist"><i class='bx bx-heart'></i></a>
+                                            <a class="product__to-wishlist" onclick="addToWishList(event)"><i
+                                                    class='bx bx-heart'></i></a>
                                             <a href="" class="product__to-review"><i class='bx bx-show'></i></a>
                                         </div>
                                     </div>
@@ -433,7 +476,7 @@
                         </div>
                     </div>
 
-                    <div class="organically__pills" id="salads">
+                    <div class="organically__pills" id="new-product">
                         <div class="row">
                             <div class="col col-xs-12 col-md-6 col-l-3">
                                 <div class="product-item organically__conent-item">
@@ -463,10 +506,11 @@
                                         </div>
                                     </div>
                                     <div class="product-box">
-                                        <a href="" class="product__to-cart btn-primary">ADD TO CART<i
+                                        <a class="product__to-cart btn-primary" onclick="addToCart(event)">ADD TO CART<i
                                                 class="bx bx-right-arrow-alt"></i></a>
                                         <div class="product__right">
-                                            <a href="" class="product__to-wishlist"><i class='bx bx-heart'></i></a>
+                                            <a class="product__to-wishlist" onclick="addToWishList(event)"><i
+                                                    class='bx bx-heart'></i></a>
                                             <a href="" class="product__to-review"><i class='bx bx-show'></i></a>
                                         </div>
                                     </div>
@@ -1331,6 +1375,34 @@
         </div>
         <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
     </footer>
+
+    <!-- ============== MODAL POPUP =============== -->
+    <!-- add cart -->
+    <div id="addToCart" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon"><img src="./assets/images/icon/groceries.png" alt="" class="img-responsive"></div>
+            <h5 class="section-title">Added to cart!</h5>
+            <p class="text-modal text-center m-b-1">Name product</p>
+            <div class="d-flex justify-center">
+                <a href="./checkout.html" class="btn-primary modal-btn">Checkout</a>
+                <span class="btn-second close-modal modal-btn">Continue shopping</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- add wishlist -->
+    <div id="addToWishList" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon"><img src="./assets/images/icon/folder.png" alt="" class="img-responsive"></div>
+            <h5 class="section-title">Added to WishList!</h5>
+            <p class="text-modal text-center m-b-1">Name product</p>
+            <div class="d-flex justify-center">
+                <a href="./wishlist.html" class="btn-primary modal-btn">To Wishlist</a>
+                <span class="btn-second close-modal modal-btn">Continue shopping</span>
+            </div>
+        </div>
+
+    </div>
 
     <!--========== SCROLL REVEAL ==========-->
     <script src="./assets/owlcarousel/assets/jquery-3.6.0.js"></script>
